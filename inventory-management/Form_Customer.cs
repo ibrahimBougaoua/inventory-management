@@ -23,7 +23,8 @@ namespace inventory_management
 
         public void AutoNumber()
         {
-            tb = db.readData("select max(Cust_ID) from Customers");
+            tb.Clear();
+            tb = db.readData("select max(Cust_ID) from Customers","");
             if ((tb.Rows[0][0].ToString() == DBNull.Value.ToString()))
             {
                 txtID.Text = "1";
@@ -38,11 +39,37 @@ namespace inventory_management
             memoAdress.Clear();
 
             btnAdd.Enabled = true;
+            btnRefresh.Enabled = true;
             btnDelete.Enabled = false;
             btnDeleteAll.Enabled = false;
             btnExit.Enabled = false;
             btnSave.Enabled = false;
-            btnRefresh.Enabled = true;
+        }
+
+        public void Show()
+        {
+            tb.Clear();
+            tb = db.readData("select * from Customers","");
+
+            if(tb.Rows.Count <= 0)
+            {
+                MessageBox.Show("No data");
+            } else
+            {
+                txtID.Text = tb.Rows[0][0].ToString();
+                txtName.Text = tb.Rows[0][1].ToString();
+                memoAdress.Text = tb.Rows[0][2].ToString();
+                txtPhone.Text = tb.Rows[0][3].ToString();
+                txtNotes.Text = tb.Rows[0][4].ToString();
+
+                btnAdd.Enabled = false;
+                btnRefresh.Enabled = true;
+                btnDelete.Enabled = true;
+                btnDeleteAll.Enabled = true;
+                btnExit.Enabled = true;
+                btnSave.Enabled = true;
+            }
+
         }
 
         private void Form_Customer_Load(object sender, EventArgs e)
@@ -67,7 +94,7 @@ namespace inventory_management
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-
+            AutoNumber();
         }
 
         private void txtPohne_EditValueChanged(object sender, EventArgs e)
@@ -79,6 +106,11 @@ namespace inventory_management
         {
             db.exceuteData("insert into Customers Values ("+txtID.Text+",'"+txtName.Text+"','"+ memoAdress.Text+ "','"+txtPhone.Text+"','"+ txtNotes.Text+"')", "Effectué avec succès");
             AutoNumber();
+        }
+
+        private void btnLeft2_Click(object sender, EventArgs e)
+        {
+            Show();
         }
     }
 }

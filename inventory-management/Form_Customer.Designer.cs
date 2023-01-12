@@ -211,6 +211,7 @@ namespace inventory_management
             this.btnLeft2.Size = new System.Drawing.Size(181, 38);
             this.btnLeft2.StyleController = this.layoutControl1;
             this.btnLeft2.TabIndex = 6;
+            this.btnLeft2.Click += new System.EventHandler(this.btnLeft2_Click);
             // 
             // btnRight
             // 

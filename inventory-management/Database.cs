@@ -14,7 +14,7 @@ namespace inventory_management
         SqlConnection conn = new SqlConnection(@"Data Source=.\SQLExpress;Initial Catalog=Sales_System;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
 
-        public DataTable readData(string stmt)
+        public DataTable readData(string stmt, string message)
         {
             DataTable table = new DataTable();
 
@@ -25,7 +25,10 @@ namespace inventory_management
                 conn.Open();
                 table.Load(cmd.ExecuteReader());
                 conn.Close();
-            } catch (Exception e)
+                if (message != "")
+                    MessageBox.Show(message, "Confirmer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
