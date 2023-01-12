@@ -34,8 +34,8 @@ namespace inventory_management
             this.searchLookUpClient = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtNcard = new DevExpress.XtraEditors.TextEdit();
-            this.txtNclient = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
+            this.txtNClient = new DevExpress.XtraEditors.TextEdit();
             this.txtPohne = new DevExpress.XtraEditors.TextEdit();
             this.memoAdress = new DevExpress.XtraEditors.MemoEdit();
             this.btnLeft2 = new DevExpress.XtraEditors.SimpleButton();
@@ -80,8 +80,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNcard.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNclient.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNClient.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPohne.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoAdress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -117,8 +117,8 @@ namespace inventory_management
             // 
             this.layoutControl1.Controls.Add(this.searchLookUpClient);
             this.layoutControl1.Controls.Add(this.txtNcard);
-            this.layoutControl1.Controls.Add(this.txtNclient);
             this.layoutControl1.Controls.Add(this.txtName);
+            this.layoutControl1.Controls.Add(this.txtNClient);
             this.layoutControl1.Controls.Add(this.txtPohne);
             this.layoutControl1.Controls.Add(this.memoAdress);
             this.layoutControl1.Controls.Add(this.btnLeft2);
@@ -167,21 +167,21 @@ namespace inventory_management
             this.txtNcard.StyleController = this.layoutControl1;
             this.txtNcard.TabIndex = 0;
             // 
-            // txtNclient
-            // 
-            this.txtNclient.Location = new System.Drawing.Point(490, 95);
-            this.txtNclient.Name = "txtNclient";
-            this.txtNclient.Size = new System.Drawing.Size(284, 28);
-            this.txtNclient.StyleController = this.layoutControl1;
-            this.txtNclient.TabIndex = 2;
-            // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(490, 61);
+            this.txtName.Location = new System.Drawing.Point(490, 95);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(284, 28);
             this.txtName.StyleController = this.layoutControl1;
-            this.txtName.TabIndex = 3;
+            this.txtName.TabIndex = 2;
+            // 
+            // txtNClient
+            // 
+            this.txtNClient.Location = new System.Drawing.Point(490, 61);
+            this.txtNClient.Name = "txtNClient";
+            this.txtNClient.Size = new System.Drawing.Size(284, 28);
+            this.txtNClient.StyleController = this.layoutControl1;
+            this.txtNClient.TabIndex = 3;
             // 
             // txtPohne
             // 
@@ -204,7 +204,7 @@ namespace inventory_management
             // 
             this.btnLeft2.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeft2.Appearance.Options.UseFont = true;
-            this.btnLeft2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnLeft2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft2.ImageOptions.Image")));
             this.btnLeft2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btnLeft2.Location = new System.Drawing.Point(32, 234);
             this.btnLeft2.Name = "btnLeft2";
@@ -216,7 +216,7 @@ namespace inventory_management
             // 
             this.btnRight.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRight.Appearance.Options.UseFont = true;
-            this.btnRight.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.btnRight.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.ImageOptions.Image")));
             this.btnRight.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btnRight.Location = new System.Drawing.Point(406, 234);
             this.btnRight.Name = "btnRight";
@@ -228,7 +228,7 @@ namespace inventory_management
             // 
             this.btnRight2.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRight2.Appearance.Options.UseFont = true;
-            this.btnRight2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.btnRight2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRight2.ImageOptions.Image")));
             this.btnRight2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btnRight2.Location = new System.Drawing.Point(592, 234);
             this.btnRight2.Name = "btnRight2";
@@ -240,7 +240,7 @@ namespace inventory_management
             // 
             this.btnLeft.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLeft.Appearance.Options.UseFont = true;
-            this.btnLeft.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.btnLeft.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.ImageOptions.Image")));
             this.btnLeft.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
             this.btnLeft.Location = new System.Drawing.Point(219, 234);
             this.btnLeft.Name = "btnLeft";
@@ -252,7 +252,7 @@ namespace inventory_management
             // 
             this.btnRefresh.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Appearance.Options.UseFont = true;
-            this.btnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.btnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ImageOptions.Image")));
             this.btnRefresh.Location = new System.Drawing.Point(149, 397);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(119, 38);
@@ -265,7 +265,7 @@ namespace inventory_management
             // 
             this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Appearance.Options.UseFont = true;
-            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.btnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.ImageOptions.Image")));
             this.btnDelete.Location = new System.Drawing.Point(411, 397);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(97, 38);
@@ -277,7 +277,7 @@ namespace inventory_management
             // 
             this.btnSave.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Appearance.Options.UseFont = true;
-            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
+            this.btnSave.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.ImageOptions.Image")));
             this.btnSave.Location = new System.Drawing.Point(274, 397);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(131, 38);
@@ -289,7 +289,7 @@ namespace inventory_management
             // 
             this.btnDeleteAll.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteAll.Appearance.Options.UseFont = true;
-            this.btnDeleteAll.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.btnDeleteAll.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteAll.ImageOptions.Image")));
             this.btnDeleteAll.Location = new System.Drawing.Point(514, 397);
             this.btnDeleteAll.Name = "btnDeleteAll";
             this.btnDeleteAll.Size = new System.Drawing.Size(146, 38);
@@ -301,7 +301,7 @@ namespace inventory_management
             // 
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
-            this.btnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton9.ImageOptions.Image")));
+            this.btnAdd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.ImageOptions.Image")));
             this.btnAdd.Location = new System.Drawing.Point(32, 397);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(111, 38);
@@ -313,7 +313,7 @@ namespace inventory_management
             // 
             this.btnExit.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Appearance.Options.UseFont = true;
-            this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton10.ImageOptions.Image")));
+            this.btnExit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.ImageOptions.Image")));
             this.btnExit.Location = new System.Drawing.Point(666, 397);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(108, 38);
@@ -377,22 +377,22 @@ namespace inventory_management
             // 
             this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem3.Control = this.txtName;
+            this.layoutControlItem3.Control = this.txtNClient;
             this.layoutControlItem3.Location = new System.Drawing.Point(373, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(375, 34);
-            this.layoutControlItem3.Text = "Nom Client";
+            this.layoutControlItem3.Text = "N Client";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem2.Control = this.txtNclient;
+            this.layoutControlItem2.Control = this.txtName;
             this.layoutControlItem2.Location = new System.Drawing.Point(373, 34);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(375, 34);
-            this.layoutControlItem2.Text = "N Client";
+            this.layoutControlItem2.Text = "Nom Client";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem6
@@ -623,8 +623,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNcard.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNclient.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNClient.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPohne.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoAdress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -662,8 +662,8 @@ namespace inventory_management
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraEditors.TextEdit txtNcard;
-        private DevExpress.XtraEditors.TextEdit txtNclient;
         private DevExpress.XtraEditors.TextEdit txtName;
+        private DevExpress.XtraEditors.TextEdit txtNClient;
         private DevExpress.XtraEditors.TextEdit txtPohne;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraEditors.MemoEdit memoAdress;

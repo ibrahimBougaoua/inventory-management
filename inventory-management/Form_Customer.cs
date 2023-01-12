@@ -26,10 +26,10 @@ namespace inventory_management
             tb = db.readData("select max(Cust_ID)+1 from Customers");
             if ((tb.Rows[0][0].ToString() == DBNull.Value.ToString()))
             {
-                txtNclient.Text = "1";
+                txtNClient.Text = "1";
             } else
             {
-                txtNclient.Text = tb.Rows[0][0].ToString();
+                txtNClient.Text = tb.Rows[0][0].ToString();
             }
         }
 
