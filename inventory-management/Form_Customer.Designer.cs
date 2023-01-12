@@ -33,10 +33,10 @@ namespace inventory_management
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.searchLookUpClient = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.txtNcard = new DevExpress.XtraEditors.TextEdit();
+            this.txtNotes = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
-            this.txtNClient = new DevExpress.XtraEditors.TextEdit();
-            this.txtPohne = new DevExpress.XtraEditors.TextEdit();
+            this.txtID = new DevExpress.XtraEditors.TextEdit();
+            this.txtPhone = new DevExpress.XtraEditors.TextEdit();
             this.memoAdress = new DevExpress.XtraEditors.MemoEdit();
             this.btnLeft2 = new DevExpress.XtraEditors.SimpleButton();
             this.btnRight = new DevExpress.XtraEditors.SimpleButton();
@@ -79,10 +79,10 @@ namespace inventory_management
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNcard.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNClient.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPohne.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoAdress.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
@@ -116,10 +116,10 @@ namespace inventory_management
             // layoutControl1
             // 
             this.layoutControl1.Controls.Add(this.searchLookUpClient);
-            this.layoutControl1.Controls.Add(this.txtNcard);
+            this.layoutControl1.Controls.Add(this.txtNotes);
             this.layoutControl1.Controls.Add(this.txtName);
-            this.layoutControl1.Controls.Add(this.txtNClient);
-            this.layoutControl1.Controls.Add(this.txtPohne);
+            this.layoutControl1.Controls.Add(this.txtID);
+            this.layoutControl1.Controls.Add(this.txtPhone);
             this.layoutControl1.Controls.Add(this.memoAdress);
             this.layoutControl1.Controls.Add(this.btnLeft2);
             this.layoutControl1.Controls.Add(this.btnRight);
@@ -159,13 +159,13 @@ namespace inventory_management
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // txtNcard
+            // txtNotes
             // 
-            this.txtNcard.Location = new System.Drawing.Point(490, 129);
-            this.txtNcard.Name = "txtNcard";
-            this.txtNcard.Size = new System.Drawing.Size(284, 28);
-            this.txtNcard.StyleController = this.layoutControl1;
-            this.txtNcard.TabIndex = 0;
+            this.txtNotes.Location = new System.Drawing.Point(490, 129);
+            this.txtNotes.Name = "txtNotes";
+            this.txtNotes.Size = new System.Drawing.Size(284, 28);
+            this.txtNotes.StyleController = this.layoutControl1;
+            this.txtNotes.TabIndex = 0;
             // 
             // txtName
             // 
@@ -175,22 +175,22 @@ namespace inventory_management
             this.txtName.StyleController = this.layoutControl1;
             this.txtName.TabIndex = 2;
             // 
-            // txtNClient
+            // txtID
             // 
-            this.txtNClient.Location = new System.Drawing.Point(490, 61);
-            this.txtNClient.Name = "txtNClient";
-            this.txtNClient.Size = new System.Drawing.Size(284, 28);
-            this.txtNClient.StyleController = this.layoutControl1;
-            this.txtNClient.TabIndex = 3;
+            this.txtID.Location = new System.Drawing.Point(490, 61);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(284, 28);
+            this.txtID.StyleController = this.layoutControl1;
+            this.txtID.TabIndex = 3;
             // 
-            // txtPohne
+            // txtPhone
             // 
-            this.txtPohne.Location = new System.Drawing.Point(117, 61);
-            this.txtPohne.Name = "txtPohne";
-            this.txtPohne.Size = new System.Drawing.Size(282, 28);
-            this.txtPohne.StyleController = this.layoutControl1;
-            this.txtPohne.TabIndex = 4;
-            this.txtPohne.EditValueChanged += new System.EventHandler(this.txtPohne_EditValueChanged);
+            this.txtPhone.Location = new System.Drawing.Point(117, 61);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(282, 28);
+            this.txtPhone.StyleController = this.layoutControl1;
+            this.txtPhone.TabIndex = 4;
+            this.txtPhone.EditValueChanged += new System.EventHandler(this.txtPohne_EditValueChanged);
             // 
             // memoAdress
             // 
@@ -308,6 +308,7 @@ namespace inventory_management
             this.btnAdd.StyleController = this.layoutControl1;
             this.btnAdd.TabIndex = 15;
             this.btnAdd.Text = "Ajout";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnExit
             // 
@@ -366,7 +367,7 @@ namespace inventory_management
             // 
             this.layoutControlItem4.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem4.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem4.Control = this.txtPohne;
+            this.layoutControlItem4.Control = this.txtPhone;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(373, 34);
@@ -377,7 +378,7 @@ namespace inventory_management
             // 
             this.layoutControlItem3.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem3.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem3.Control = this.txtNClient;
+            this.layoutControlItem3.Control = this.txtID;
             this.layoutControlItem3.Location = new System.Drawing.Point(373, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(375, 34);
@@ -412,11 +413,11 @@ namespace inventory_management
             // 
             this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem1.Control = this.txtNcard;
+            this.layoutControlItem1.Control = this.txtNotes;
             this.layoutControlItem1.Location = new System.Drawing.Point(373, 68);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(375, 34);
-            this.layoutControlItem1.Text = "N Carte";
+            this.layoutControlItem1.Text = "Notes";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(69, 13);
             // 
             // tabbedControlGroup2
@@ -622,10 +623,10 @@ namespace inventory_management
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNcard.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNClient.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPohne.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhone.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memoAdress.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
@@ -661,10 +662,10 @@ namespace inventory_management
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.TextEdit txtNcard;
+        private DevExpress.XtraEditors.TextEdit txtNotes;
         private DevExpress.XtraEditors.TextEdit txtName;
-        private DevExpress.XtraEditors.TextEdit txtNClient;
-        private DevExpress.XtraEditors.TextEdit txtPohne;
+        private DevExpress.XtraEditors.TextEdit txtID;
+        private DevExpress.XtraEditors.TextEdit txtPhone;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraEditors.MemoEdit memoAdress;
         private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup1;

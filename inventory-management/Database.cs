@@ -33,7 +33,7 @@ namespace inventory_management
             return table;
         }
 
-        public bool exceuteData(string stmt)
+        public bool exceuteData(string stmt,string message)
         {
             try
             {
@@ -42,6 +42,8 @@ namespace inventory_management
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
+                if (message != "")
+                    MessageBox.Show(message, "Confirmer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             } catch (Exception e)
             {

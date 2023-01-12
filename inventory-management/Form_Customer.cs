@@ -23,14 +23,26 @@ namespace inventory_management
 
         public void AutoNumber()
         {
-            tb = db.readData("select max(Cust_ID)+1 from Customers");
+            tb = db.readData("select max(Cust_ID) from Customers");
             if ((tb.Rows[0][0].ToString() == DBNull.Value.ToString()))
             {
-                txtNClient.Text = "1";
+                txtID.Text = "1";
             } else
             {
-                txtNClient.Text = tb.Rows[0][0].ToString();
+                txtID.Text = (Convert.ToInt32(tb.Rows[0][0]) + 1).ToString();
             }
+
+            txtName.Clear();
+            txtNotes.Clear();
+            txtPhone.Clear();
+            memoAdress.Clear();
+
+            btnAdd.Enabled = true;
+            btnDelete.Enabled = false;
+            btnDeleteAll.Enabled = false;
+            btnExit.Enabled = false;
+            btnSave.Enabled = false;
+            btnRefresh.Enabled = true;
         }
 
         private void Form_Customer_Load(object sender, EventArgs e)
@@ -61,6 +73,12 @@ namespace inventory_management
         private void txtPohne_EditValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            db.exceuteData("insert into Customers Values ("+txtID.Text+",'"+txtName.Text+"','"+ memoAdress.Text+ "','"+txtPhone.Text+"','"+ txtNotes.Text+"')", "Effectué avec succès");
+            AutoNumber();
         }
     }
 }
