@@ -25,5 +25,11 @@ namespace inventory_management
         {
 
         }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form_Customer frm = new Form_Customer();
+            frm.ShowDialog();
+        }
     }
 }

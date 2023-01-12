@@ -42,6 +42,46 @@ namespace inventory_management
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
+            this.D = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup3 = new DevExpress.XtraBars.BarButtonGroup();
+            this.Retrait = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonGroup4 = new DevExpress.XtraBars.BarButtonGroup();
+            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem42 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem43 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -52,87 +92,47 @@ namespace inventory_management
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem12 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem13 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem14 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem15 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage5 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem18 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem21 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup22 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem22 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage7 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup24 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup26 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup27 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem25 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem26 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem27 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem28 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup2 = new DevExpress.XtraBars.BarButtonGroup();
             this.ribbonPageGroup28 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage8 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup34 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup35 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup40 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup36 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup37 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup38 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup39 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPage11 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup29 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup30 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup31 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup1 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
-            this.D = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup3 = new DevExpress.XtraBars.BarButtonGroup();
-            this.Retrait = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonGroup4 = new DevExpress.XtraBars.BarButtonGroup();
-            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup32 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup33 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup34 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup35 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup36 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup37 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup38 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup39 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem42 = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup40 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barButtonItem43 = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonPage10 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -331,192 +331,6 @@ namespace inventory_management
             this.barButtonItem9.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem9.Name = "barButtonItem9";
             // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage1.Appearance.Options.UseFont = true;
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2,
-            this.ribbonPageGroup3,
-            this.ribbonPageGroup4,
-            this.ribbonPageGroup5,
-            this.ribbonPageGroup6,
-            this.ribbonPageGroup7,
-            this.ribbonPageGroup8});
-            this.ribbonPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Paramètres";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            // 
-            // ribbonPageGroup3
-            // 
-            this.ribbonPageGroup3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup3.ImageOptions.Image")));
-            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
-            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            // 
-            // ribbonPageGroup4
-            // 
-            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem5);
-            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            // 
-            // ribbonPageGroup5
-            // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem6);
-            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            // 
-            // ribbonPageGroup7
-            // 
-            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem8);
-            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem9);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            // 
-            // ribbonPage2
-            // 
-            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage2.Appearance.Options.UseFont = true;
-            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup9,
-            this.ribbonPageGroup11,
-            this.ribbonPageGroup12});
-            this.ribbonPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
-            this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Clientes";
-            // 
-            // ribbonPage3
-            // 
-            this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage3.Appearance.Options.UseFont = true;
-            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup13,
-            this.ribbonPageGroup14,
-            this.ribbonPageGroup15});
-            this.ribbonPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
-            this.ribbonPage3.Name = "ribbonPage3";
-            this.ribbonPage3.Text = "Fournisseurs";
-            // 
-            // ribbonPage5
-            // 
-            this.ribbonPage5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage5.Appearance.Options.UseFont = true;
-            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup16,
-            this.ribbonPageGroup17});
-            this.ribbonPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.ImageOptions.Image")));
-            this.ribbonPage5.Name = "ribbonPage5";
-            this.ribbonPage5.Text = "Achats";
-            // 
-            // ribbonPage4
-            // 
-            this.ribbonPage4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage4.Appearance.Options.UseFont = true;
-            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup18,
-            this.ribbonPageGroup19,
-            this.ribbonPageGroup20,
-            this.ribbonPageGroup21});
-            this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
-            this.ribbonPage4.Name = "ribbonPage4";
-            this.ribbonPage4.Text = "Ventes";
-            // 
-            // ribbonPage6
-            // 
-            this.ribbonPage6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage6.Appearance.Options.UseFont = true;
-            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup22,
-            this.ribbonPageGroup23});
-            this.ribbonPage6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage6.ImageOptions.Image")));
-            this.ribbonPage6.Name = "ribbonPage6";
-            this.ribbonPage6.Text = "Retours";
-            // 
-            // ribbonPage7
-            // 
-            this.ribbonPage7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage7.Appearance.Options.UseFont = true;
-            this.ribbonPage7.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup24,
-            this.ribbonPageGroup25,
-            this.ribbonPageGroup26,
-            this.ribbonPageGroup27,
-            this.ribbonPageGroup28});
-            this.ribbonPage7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage7.ImageOptions.Image")));
-            this.ribbonPage7.Name = "ribbonPage7";
-            this.ribbonPage7.Text = "Dépenses";
-            // 
-            // ribbonPage8
-            // 
-            this.ribbonPage8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage8.Appearance.Options.UseFont = true;
-            this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup34,
-            this.ribbonPageGroup35,
-            this.ribbonPageGroup40,
-            this.ribbonPageGroup36,
-            this.ribbonPageGroup37,
-            this.ribbonPageGroup38,
-            this.ribbonPageGroup39});
-            this.ribbonPage8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage8.ImageOptions.Image")));
-            this.ribbonPage8.Name = "ribbonPage8";
-            this.ribbonPage8.Text = "Personnel";
-            // 
-            // ribbonPage11
-            // 
-            this.ribbonPage11.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage11.Appearance.Options.UseFont = true;
-            this.ribbonPage11.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup29,
-            this.ribbonPageGroup30,
-            this.ribbonPageGroup31});
-            this.ribbonPage11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage11.ImageOptions.Image")));
-            this.ribbonPage11.Name = "ribbonPage11";
-            this.ribbonPage11.Text = "Coffre Fort";
-            // 
-            // ribbonPage9
-            // 
-            this.ribbonPage9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonPage9.Appearance.Options.UseFont = true;
-            this.ribbonPage9.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup32,
-            this.ribbonPageGroup33});
-            this.ribbonPage9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage9.ImageOptions.Image")));
-            this.ribbonPage9.Name = "ribbonPage9";
-            this.ribbonPage9.Text = "Sauvegardes";
-            // 
-            // ribbonPage10
-            // 
-            this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup10});
-            this.ribbonPage10.Name = "ribbonPage10";
-            // 
-            // ribbonPageGroup10
-            // 
-            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
-            // 
-            // ribbonPageGroup9
-            // 
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem10);
-            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            // 
             // barButtonItem10
             // 
             this.barButtonItem10.Caption = "Données Clients";
@@ -528,11 +342,7 @@ namespace inventory_management
             this.barButtonItem10.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem10.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem10.Name = "barButtonItem10";
-            // 
-            // ribbonPageGroup11
-            // 
-            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem11);
-            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
             // 
             // barButtonItem11
             // 
@@ -546,11 +356,6 @@ namespace inventory_management
             this.barButtonItem11.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem11.Name = "barButtonItem11";
             // 
-            // ribbonPageGroup12
-            // 
-            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem12);
-            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            // 
             // barButtonItem12
             // 
             this.barButtonItem12.Caption = "Rapports Clients Montants";
@@ -562,11 +367,6 @@ namespace inventory_management
             this.barButtonItem12.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem12.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem12.Name = "barButtonItem12";
-            // 
-            // ribbonPageGroup13
-            // 
-            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem13);
-            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             // 
             // barButtonItem13
             // 
@@ -580,11 +380,6 @@ namespace inventory_management
             this.barButtonItem13.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem13.Name = "barButtonItem13";
             // 
-            // ribbonPageGroup14
-            // 
-            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem14);
-            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            // 
             // barButtonItem14
             // 
             this.barButtonItem14.Caption = "Comptes Fournisseurs";
@@ -596,11 +391,6 @@ namespace inventory_management
             this.barButtonItem14.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem14.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem14.Name = "barButtonItem14";
-            // 
-            // ribbonPageGroup15
-            // 
-            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem15);
-            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
             // 
             // barButtonItem15
             // 
@@ -614,11 +404,6 @@ namespace inventory_management
             this.barButtonItem15.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem15.Name = "barButtonItem15";
             // 
-            // ribbonPageGroup16
-            // 
-            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem16);
-            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
-            // 
             // barButtonItem16
             // 
             this.barButtonItem16.Caption = "Gestion Des Achats";
@@ -630,11 +415,6 @@ namespace inventory_management
             this.barButtonItem16.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem16.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem16.Name = "barButtonItem16";
-            // 
-            // ribbonPageGroup17
-            // 
-            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem17);
-            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
             // 
             // barButtonItem17
             // 
@@ -648,11 +428,6 @@ namespace inventory_management
             this.barButtonItem17.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem17.Name = "barButtonItem17";
             // 
-            // ribbonPageGroup18
-            // 
-            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem18);
-            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
-            // 
             // barButtonItem18
             // 
             this.barButtonItem18.Caption = "Administration des ventes";
@@ -664,11 +439,6 @@ namespace inventory_management
             this.barButtonItem18.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem18.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem18.Name = "barButtonItem18";
-            // 
-            // ribbonPageGroup19
-            // 
-            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem19);
-            this.ribbonPageGroup19.Name = "ribbonPageGroup19";
             // 
             // barButtonItem19
             // 
@@ -682,11 +452,6 @@ namespace inventory_management
             this.barButtonItem19.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem19.Name = "barButtonItem19";
             // 
-            // ribbonPageGroup20
-            // 
-            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem20);
-            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
-            // 
             // barButtonItem20
             // 
             this.barButtonItem20.Caption = "Rapports de ventes";
@@ -698,11 +463,6 @@ namespace inventory_management
             this.barButtonItem20.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem20.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem20.Name = "barButtonItem20";
-            // 
-            // ribbonPageGroup21
-            // 
-            this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem21);
-            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
             // 
             // barButtonItem21
             // 
@@ -716,11 +476,6 @@ namespace inventory_management
             this.barButtonItem21.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem21.Name = "barButtonItem21";
             // 
-            // ribbonPageGroup22
-            // 
-            this.ribbonPageGroup22.ItemLinks.Add(this.barButtonItem22);
-            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
-            // 
             // barButtonItem22
             // 
             this.barButtonItem22.Caption = "Retours - Ventes et achats";
@@ -732,11 +487,6 @@ namespace inventory_management
             this.barButtonItem22.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem22.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem22.Name = "barButtonItem22";
-            // 
-            // ribbonPageGroup23
-            // 
-            this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem23);
-            this.ribbonPageGroup23.Name = "ribbonPageGroup23";
             // 
             // barButtonItem23
             // 
@@ -750,29 +500,6 @@ namespace inventory_management
             this.barButtonItem23.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem23.Name = "barButtonItem23";
             this.barButtonItem23.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem23_ItemClick);
-            // 
-            // ribbonPageGroup24
-            // 
-            this.ribbonPageGroup24.ItemLinks.Add(this.barButtonItem24);
-            this.ribbonPageGroup24.Name = "ribbonPageGroup24";
-            // 
-            // ribbonPageGroup25
-            // 
-            this.ribbonPageGroup25.ItemLinks.Add(this.barButtonItem25);
-            this.ribbonPageGroup25.Name = "ribbonPageGroup25";
-            // 
-            // ribbonPageGroup26
-            // 
-            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem26);
-            this.ribbonPageGroup26.Name = "ribbonPageGroup26";
-            // 
-            // ribbonPageGroup27
-            // 
-            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem27);
-            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem31);
-            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem30);
-            this.ribbonPageGroup27.Name = "ribbonPageGroup27";
-            this.ribbonPageGroup27.Text = "Réception et d\'échange de bons";
             // 
             // barButtonItem24
             // 
@@ -836,11 +563,6 @@ namespace inventory_management
             this.barButtonGroup2.Id = 33;
             this.barButtonGroup2.Name = "barButtonGroup2";
             // 
-            // ribbonPageGroup28
-            // 
-            this.ribbonPageGroup28.ItemLinks.Add(this.barButtonItem29);
-            this.ribbonPageGroup28.Name = "ribbonPageGroup28";
-            // 
             // barButtonItem29
             // 
             this.barButtonItem29.Caption = "Déclaration d\'impôts";
@@ -876,28 +598,6 @@ namespace inventory_management
             this.barButtonItem31.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem31.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem31.Name = "barButtonItem31";
-            // 
-            // ribbonPageGroup29
-            // 
-            this.ribbonPageGroup29.ItemLinks.Add(this.barButtonItem32);
-            this.ribbonPageGroup29.Name = "ribbonPageGroup29";
-            // 
-            // ribbonPageGroup30
-            // 
-            this.ribbonPageGroup30.ItemLinks.Add(this.barButtonItem33);
-            this.ribbonPageGroup30.ItemLinks.Add(this.barButtonGroup1);
-            this.ribbonPageGroup30.ItemLinks.Add(this.D);
-            this.ribbonPageGroup30.Name = "ribbonPageGroup30";
-            this.ribbonPageGroup30.Text = "ribbonPageGroup30";
-            // 
-            // ribbonPageGroup31
-            // 
-            this.ribbonPageGroup31.ItemLinks.Add(this.barButtonGroup3);
-            this.ribbonPageGroup31.ItemLinks.Add(this.Retrait);
-            this.ribbonPageGroup31.ItemLinks.Add(this.barButtonGroup4);
-            this.ribbonPageGroup31.ItemLinks.Add(this.barButtonItem34);
-            this.ribbonPageGroup31.Name = "ribbonPageGroup31";
-            this.ribbonPageGroup31.Text = "ribbonPageGroup31";
             // 
             // barButtonItem32
             // 
@@ -971,11 +671,6 @@ namespace inventory_management
             this.barButtonItem34.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem34.Name = "barButtonItem34";
             // 
-            // ribbonPageGroup32
-            // 
-            this.ribbonPageGroup32.ItemLinks.Add(this.barButtonItem35);
-            this.ribbonPageGroup32.Name = "ribbonPageGroup32";
-            // 
             // barButtonItem35
             // 
             this.barButtonItem35.Caption = "Faire une sauvegarde";
@@ -987,11 +682,6 @@ namespace inventory_management
             this.barButtonItem35.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem35.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem35.Name = "barButtonItem35";
-            // 
-            // ribbonPageGroup33
-            // 
-            this.ribbonPageGroup33.ItemLinks.Add(this.barButtonItem36);
-            this.ribbonPageGroup33.Name = "ribbonPageGroup33";
             // 
             // barButtonItem36
             // 
@@ -1005,11 +695,6 @@ namespace inventory_management
             this.barButtonItem36.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem36.Name = "barButtonItem36";
             // 
-            // ribbonPageGroup34
-            // 
-            this.ribbonPageGroup34.ItemLinks.Add(this.barButtonItem37);
-            this.ribbonPageGroup34.Name = "ribbonPageGroup34";
-            // 
             // barButtonItem37
             // 
             this.barButtonItem37.Caption = "Ajouter Employés";
@@ -1021,11 +706,6 @@ namespace inventory_management
             this.barButtonItem37.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem37.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem37.Name = "barButtonItem37";
-            // 
-            // ribbonPageGroup35
-            // 
-            this.ribbonPageGroup35.ItemLinks.Add(this.barButtonItem38);
-            this.ribbonPageGroup35.Name = "ribbonPageGroup35";
             // 
             // barButtonItem38
             // 
@@ -1039,11 +719,6 @@ namespace inventory_management
             this.barButtonItem38.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem38.Name = "barButtonItem38";
             // 
-            // ribbonPageGroup36
-            // 
-            this.ribbonPageGroup36.ItemLinks.Add(this.barButtonItem39);
-            this.ribbonPageGroup36.Name = "ribbonPageGroup36";
-            // 
             // barButtonItem39
             // 
             this.barButtonItem39.Caption = "Avances";
@@ -1055,11 +730,6 @@ namespace inventory_management
             this.barButtonItem39.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem39.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem39.Name = "barButtonItem39";
-            // 
-            // ribbonPageGroup37
-            // 
-            this.ribbonPageGroup37.ItemLinks.Add(this.barButtonItem40);
-            this.ribbonPageGroup37.Name = "ribbonPageGroup37";
             // 
             // barButtonItem40
             // 
@@ -1073,11 +743,6 @@ namespace inventory_management
             this.barButtonItem40.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem40.Name = "barButtonItem40";
             // 
-            // ribbonPageGroup38
-            // 
-            this.ribbonPageGroup38.ItemLinks.Add(this.barButtonItem41);
-            this.ribbonPageGroup38.Name = "ribbonPageGroup38";
-            // 
             // barButtonItem41
             // 
             this.barButtonItem41.Caption = "Rapport de salaire";
@@ -1089,11 +754,6 @@ namespace inventory_management
             this.barButtonItem41.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem41.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem41.Name = "barButtonItem41";
-            // 
-            // ribbonPageGroup39
-            // 
-            this.ribbonPageGroup39.ItemLinks.Add(this.barButtonItem42);
-            this.ribbonPageGroup39.Name = "ribbonPageGroup39";
             // 
             // barButtonItem42
             // 
@@ -1107,11 +767,6 @@ namespace inventory_management
             this.barButtonItem42.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem42.Name = "barButtonItem42";
             // 
-            // ribbonPageGroup40
-            // 
-            this.ribbonPageGroup40.ItemLinks.Add(this.barButtonItem43);
-            this.ribbonPageGroup40.Name = "ribbonPageGroup40";
-            // 
             // barButtonItem43
             // 
             this.barButtonItem43.Caption = "Paiement des salaires des employés";
@@ -1123,6 +778,352 @@ namespace inventory_management
             this.barButtonItem43.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.barButtonItem43.ItemAppearance.Normal.Options.UseFont = true;
             this.barButtonItem43.Name = "barButtonItem43";
+            // 
+            // ribbonPage1
+            // 
+            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage1.Appearance.Options.UseFont = true;
+            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1,
+            this.ribbonPageGroup2,
+            this.ribbonPageGroup3,
+            this.ribbonPageGroup4,
+            this.ribbonPageGroup5,
+            this.ribbonPageGroup6,
+            this.ribbonPageGroup7,
+            this.ribbonPageGroup8});
+            this.ribbonPage1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage1.ImageOptions.Image")));
+            this.ribbonPage1.Name = "ribbonPage1";
+            this.ribbonPage1.Text = "Paramètres";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            // 
+            // ribbonPageGroup2
+            // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem3);
+            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
+            // 
+            // ribbonPageGroup3
+            // 
+            this.ribbonPageGroup3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPageGroup3.ImageOptions.Image")));
+            this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem4);
+            this.ribbonPageGroup3.Name = "ribbonPageGroup3";
+            // 
+            // ribbonPageGroup4
+            // 
+            this.ribbonPageGroup4.ItemLinks.Add(this.barButtonItem5);
+            this.ribbonPageGroup4.Name = "ribbonPageGroup4";
+            // 
+            // ribbonPageGroup5
+            // 
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup5.Name = "ribbonPageGroup5";
+            // 
+            // ribbonPageGroup6
+            // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            // 
+            // ribbonPageGroup7
+            // 
+            this.ribbonPageGroup7.ItemLinks.Add(this.barButtonItem8);
+            this.ribbonPageGroup7.Name = "ribbonPageGroup7";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem9);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            // 
+            // ribbonPage2
+            // 
+            this.ribbonPage2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage2.Appearance.Options.UseFont = true;
+            this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup9,
+            this.ribbonPageGroup11,
+            this.ribbonPageGroup12});
+            this.ribbonPage2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.ImageOptions.Image")));
+            this.ribbonPage2.Name = "ribbonPage2";
+            this.ribbonPage2.Text = "Clientes";
+            // 
+            // ribbonPageGroup9
+            // 
+            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem10);
+            this.ribbonPageGroup9.Name = "ribbonPageGroup9";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem11);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            // 
+            // ribbonPageGroup12
+            // 
+            this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem12);
+            this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+            // 
+            // ribbonPage3
+            // 
+            this.ribbonPage3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage3.Appearance.Options.UseFont = true;
+            this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup13,
+            this.ribbonPageGroup14,
+            this.ribbonPageGroup15});
+            this.ribbonPage3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage3.ImageOptions.Image")));
+            this.ribbonPage3.Name = "ribbonPage3";
+            this.ribbonPage3.Text = "Fournisseurs";
+            // 
+            // ribbonPageGroup13
+            // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem13);
+            this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+            // 
+            // ribbonPageGroup14
+            // 
+            this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem14);
+            this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+            // 
+            // ribbonPageGroup15
+            // 
+            this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem15);
+            this.ribbonPageGroup15.Name = "ribbonPageGroup15";
+            // 
+            // ribbonPage5
+            // 
+            this.ribbonPage5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage5.Appearance.Options.UseFont = true;
+            this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup16,
+            this.ribbonPageGroup17});
+            this.ribbonPage5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage5.ImageOptions.Image")));
+            this.ribbonPage5.Name = "ribbonPage5";
+            this.ribbonPage5.Text = "Achats";
+            // 
+            // ribbonPageGroup16
+            // 
+            this.ribbonPageGroup16.ItemLinks.Add(this.barButtonItem16);
+            this.ribbonPageGroup16.Name = "ribbonPageGroup16";
+            // 
+            // ribbonPageGroup17
+            // 
+            this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem17);
+            this.ribbonPageGroup17.Name = "ribbonPageGroup17";
+            // 
+            // ribbonPage4
+            // 
+            this.ribbonPage4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage4.Appearance.Options.UseFont = true;
+            this.ribbonPage4.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup18,
+            this.ribbonPageGroup19,
+            this.ribbonPageGroup20,
+            this.ribbonPageGroup21});
+            this.ribbonPage4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage4.ImageOptions.Image")));
+            this.ribbonPage4.Name = "ribbonPage4";
+            this.ribbonPage4.Text = "Ventes";
+            // 
+            // ribbonPageGroup18
+            // 
+            this.ribbonPageGroup18.ItemLinks.Add(this.barButtonItem18);
+            this.ribbonPageGroup18.Name = "ribbonPageGroup18";
+            // 
+            // ribbonPageGroup19
+            // 
+            this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem19);
+            this.ribbonPageGroup19.Name = "ribbonPageGroup19";
+            // 
+            // ribbonPageGroup20
+            // 
+            this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem20);
+            this.ribbonPageGroup20.Name = "ribbonPageGroup20";
+            // 
+            // ribbonPageGroup21
+            // 
+            this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem21);
+            this.ribbonPageGroup21.Name = "ribbonPageGroup21";
+            // 
+            // ribbonPage6
+            // 
+            this.ribbonPage6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage6.Appearance.Options.UseFont = true;
+            this.ribbonPage6.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup22,
+            this.ribbonPageGroup23});
+            this.ribbonPage6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage6.ImageOptions.Image")));
+            this.ribbonPage6.Name = "ribbonPage6";
+            this.ribbonPage6.Text = "Retours";
+            // 
+            // ribbonPageGroup22
+            // 
+            this.ribbonPageGroup22.ItemLinks.Add(this.barButtonItem22);
+            this.ribbonPageGroup22.Name = "ribbonPageGroup22";
+            // 
+            // ribbonPageGroup23
+            // 
+            this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem23);
+            this.ribbonPageGroup23.Name = "ribbonPageGroup23";
+            // 
+            // ribbonPage7
+            // 
+            this.ribbonPage7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage7.Appearance.Options.UseFont = true;
+            this.ribbonPage7.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup24,
+            this.ribbonPageGroup25,
+            this.ribbonPageGroup26,
+            this.ribbonPageGroup27,
+            this.ribbonPageGroup28});
+            this.ribbonPage7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage7.ImageOptions.Image")));
+            this.ribbonPage7.Name = "ribbonPage7";
+            this.ribbonPage7.Text = "Dépenses";
+            // 
+            // ribbonPageGroup24
+            // 
+            this.ribbonPageGroup24.ItemLinks.Add(this.barButtonItem24);
+            this.ribbonPageGroup24.Name = "ribbonPageGroup24";
+            // 
+            // ribbonPageGroup25
+            // 
+            this.ribbonPageGroup25.ItemLinks.Add(this.barButtonItem25);
+            this.ribbonPageGroup25.Name = "ribbonPageGroup25";
+            // 
+            // ribbonPageGroup26
+            // 
+            this.ribbonPageGroup26.ItemLinks.Add(this.barButtonItem26);
+            this.ribbonPageGroup26.Name = "ribbonPageGroup26";
+            // 
+            // ribbonPageGroup27
+            // 
+            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem27);
+            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem31);
+            this.ribbonPageGroup27.ItemLinks.Add(this.barButtonItem30);
+            this.ribbonPageGroup27.Name = "ribbonPageGroup27";
+            this.ribbonPageGroup27.Text = "Réception et d\'échange de bons";
+            // 
+            // ribbonPageGroup28
+            // 
+            this.ribbonPageGroup28.ItemLinks.Add(this.barButtonItem29);
+            this.ribbonPageGroup28.Name = "ribbonPageGroup28";
+            // 
+            // ribbonPage8
+            // 
+            this.ribbonPage8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage8.Appearance.Options.UseFont = true;
+            this.ribbonPage8.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup34,
+            this.ribbonPageGroup35,
+            this.ribbonPageGroup40,
+            this.ribbonPageGroup36,
+            this.ribbonPageGroup37,
+            this.ribbonPageGroup38,
+            this.ribbonPageGroup39});
+            this.ribbonPage8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage8.ImageOptions.Image")));
+            this.ribbonPage8.Name = "ribbonPage8";
+            this.ribbonPage8.Text = "Personnel";
+            // 
+            // ribbonPageGroup34
+            // 
+            this.ribbonPageGroup34.ItemLinks.Add(this.barButtonItem37);
+            this.ribbonPageGroup34.Name = "ribbonPageGroup34";
+            // 
+            // ribbonPageGroup35
+            // 
+            this.ribbonPageGroup35.ItemLinks.Add(this.barButtonItem38);
+            this.ribbonPageGroup35.Name = "ribbonPageGroup35";
+            // 
+            // ribbonPageGroup40
+            // 
+            this.ribbonPageGroup40.ItemLinks.Add(this.barButtonItem43);
+            this.ribbonPageGroup40.Name = "ribbonPageGroup40";
+            // 
+            // ribbonPageGroup36
+            // 
+            this.ribbonPageGroup36.ItemLinks.Add(this.barButtonItem39);
+            this.ribbonPageGroup36.Name = "ribbonPageGroup36";
+            // 
+            // ribbonPageGroup37
+            // 
+            this.ribbonPageGroup37.ItemLinks.Add(this.barButtonItem40);
+            this.ribbonPageGroup37.Name = "ribbonPageGroup37";
+            // 
+            // ribbonPageGroup38
+            // 
+            this.ribbonPageGroup38.ItemLinks.Add(this.barButtonItem41);
+            this.ribbonPageGroup38.Name = "ribbonPageGroup38";
+            // 
+            // ribbonPageGroup39
+            // 
+            this.ribbonPageGroup39.ItemLinks.Add(this.barButtonItem42);
+            this.ribbonPageGroup39.Name = "ribbonPageGroup39";
+            // 
+            // ribbonPage11
+            // 
+            this.ribbonPage11.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage11.Appearance.Options.UseFont = true;
+            this.ribbonPage11.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup29,
+            this.ribbonPageGroup30,
+            this.ribbonPageGroup31});
+            this.ribbonPage11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage11.ImageOptions.Image")));
+            this.ribbonPage11.Name = "ribbonPage11";
+            this.ribbonPage11.Text = "Coffre Fort";
+            // 
+            // ribbonPageGroup29
+            // 
+            this.ribbonPageGroup29.ItemLinks.Add(this.barButtonItem32);
+            this.ribbonPageGroup29.Name = "ribbonPageGroup29";
+            // 
+            // ribbonPageGroup30
+            // 
+            this.ribbonPageGroup30.ItemLinks.Add(this.barButtonItem33);
+            this.ribbonPageGroup30.ItemLinks.Add(this.barButtonGroup1);
+            this.ribbonPageGroup30.ItemLinks.Add(this.D);
+            this.ribbonPageGroup30.Name = "ribbonPageGroup30";
+            this.ribbonPageGroup30.Text = "ribbonPageGroup30";
+            // 
+            // ribbonPageGroup31
+            // 
+            this.ribbonPageGroup31.ItemLinks.Add(this.barButtonGroup3);
+            this.ribbonPageGroup31.ItemLinks.Add(this.Retrait);
+            this.ribbonPageGroup31.ItemLinks.Add(this.barButtonGroup4);
+            this.ribbonPageGroup31.ItemLinks.Add(this.barButtonItem34);
+            this.ribbonPageGroup31.Name = "ribbonPageGroup31";
+            this.ribbonPageGroup31.Text = "ribbonPageGroup31";
+            // 
+            // ribbonPage9
+            // 
+            this.ribbonPage9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPage9.Appearance.Options.UseFont = true;
+            this.ribbonPage9.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup32,
+            this.ribbonPageGroup33});
+            this.ribbonPage9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage9.ImageOptions.Image")));
+            this.ribbonPage9.Name = "ribbonPage9";
+            this.ribbonPage9.Text = "Sauvegardes";
+            // 
+            // ribbonPageGroup32
+            // 
+            this.ribbonPageGroup32.ItemLinks.Add(this.barButtonItem35);
+            this.ribbonPageGroup32.Name = "ribbonPageGroup32";
+            // 
+            // ribbonPageGroup33
+            // 
+            this.ribbonPageGroup33.ItemLinks.Add(this.barButtonItem36);
+            this.ribbonPageGroup33.Name = "ribbonPageGroup33";
+            // 
+            // ribbonPage10
+            // 
+            this.ribbonPage10.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup10});
+            this.ribbonPage10.Name = "ribbonPage10";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "ribbonPageGroup10";
             // 
             // Form1
             // 
