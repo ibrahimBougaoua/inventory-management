@@ -32,5 +32,10 @@ namespace inventory_management
         {
 
         }
+
+        private void textEdit5_EditValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
