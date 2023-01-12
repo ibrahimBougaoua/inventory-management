@@ -18,9 +18,24 @@ namespace inventory_management
             InitializeComponent();
         }
 
+        Database db = new Database();
+        DataTable tb = new DataTable();
+
+        public void AutoNumber()
+        {
+            tb = db.readData("select max(Cust_ID)+1 from Customers");
+            if ((tb.Rows[0][0].ToString() == DBNull.Value.ToString()))
+            {
+                txtNclient.Text = "1";
+            } else
+            {
+                txtNclient.Text = tb.Rows[0][0].ToString();
+            }
+        }
+
         private void Form_Customer_Load(object sender, EventArgs e)
         {
-
+            AutoNumber();
         }
 
         private void textEdit5_EditValueChanged(object sender, EventArgs e)
@@ -34,6 +49,16 @@ namespace inventory_management
         }
 
         private void textEdit5_EditValueChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPohne_EditValueChanged(object sender, EventArgs e)
         {
 
         }
