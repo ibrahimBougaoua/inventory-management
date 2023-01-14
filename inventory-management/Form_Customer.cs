@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace inventory_management
 {
@@ -51,18 +52,45 @@ namespace inventory_management
         public void Show()
         {
             tb.Clear();
-            tb = db.readData("select * from Customers where Delete_at IS NULL","");
+            tb = db.readData("select * from Customers where Delete_at IS NULL", "");
 
-            if(tb.Rows.Count <= 0)
+            if (tb.Rows.Count <= 0)
             {
                 MessageBox.Show("Aucune donnée sur cet écran");
-            } else
+            }
+            else
             {
                 txtID.Text = tb.Rows[row][0].ToString();
                 txtName.Text = tb.Rows[row][1].ToString();
                 memoAdress.Text = tb.Rows[row][2].ToString();
                 txtPhone.Text = tb.Rows[row][3].ToString();
                 txtNotes.Text = tb.Rows[row][4].ToString();
+
+                btnAdd.Enabled = false;
+                btnRefresh.Enabled = true;
+                btnDelete.Enabled = true;
+                btnDeleteAll.Enabled = true;
+                btnExit.Enabled = true;
+                btnSave.Enabled = true;
+            }
+
+        }
+        public void Get(int id)
+        {
+            tb.Clear();
+            tb = db.readData("select * from Customers where Cust_ID = "+ id + "", "");
+
+            if (tb.Rows.Count <= 0)
+            {
+                MessageBox.Show("Aucune donnée sur cet écran");
+            }
+            else
+            {
+                txtID.Text = tb.Rows[0][0].ToString();
+                txtName.Text = tb.Rows[0][1].ToString();
+                memoAdress.Text = tb.Rows[0][2].ToString();
+                txtPhone.Text = tb.Rows[0][3].ToString();
+                txtNotes.Text = tb.Rows[0][4].ToString();
 
                 btnAdd.Enabled = false;
                 btnRefresh.Enabled = true;
@@ -108,8 +136,11 @@ namespace inventory_management
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            db.exceuteData("insert into Customers (Cust_ID,Cust_Name,Cust_Address,Cust_Phone,Notes) Values (" + txtID.Text+",'"+txtName.Text+"','"+ memoAdress.Text+ "','"+txtPhone.Text+"','"+ txtNotes.Text+"')", "Effectué avec succès");
-            AutoNumber();
+            if(dxValidationProvider1.Validate())
+            {
+                db.exceuteData("insert into Customers (Cust_ID,Cust_Name,Cust_Address,Cust_Phone,Notes) Values (" + txtID.Text + ",'" + txtName.Text + "','" + memoAdress.Text + "','" + txtPhone.Text + "','" + txtNotes.Text + "')", "Effectué avec succès");
+                AutoNumber();
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -181,6 +212,23 @@ namespace inventory_management
             {
                 btnLeft.Enabled = false;
             }
+        }
+
+        private void searchLookUpClient_EditValueChanged(object sender, EventArgs e)
+        {
+            object obj = searchLookUpClient.EditValue;
+            //string text = searchLookUpClient.Text;
+            //MessageBox.Show(obj.ToString());
+            Get(Convert.ToInt32(obj));
+        }
+
+        private void searchLookUpClient_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+        }
+
+        private void searchLookUpClient_ButtonPressed(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            MessageBox.Show(e.ToString());
         }
     }
 }
