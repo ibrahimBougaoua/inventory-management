@@ -1,7 +1,7 @@
 ﻿
 namespace inventory_management
 {
-    partial class Form_Customer
+    partial class Form_Suppliers
     {
         /// <summary>
         /// Required designer variable.
@@ -32,17 +32,10 @@ namespace inventory_management
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Customer));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Suppliers));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.searchLookUpClient = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customerDataSet = new inventory_management.CustomerDataSet();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colCust_ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCust_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCust_Phone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCust_Address = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtNotes = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
@@ -83,16 +76,18 @@ namespace inventory_management
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.customersTableAdapter = new inventory_management.CustomerDataSetTableAdapters.CustomersTableAdapter();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
+            this.supplierDataSet = new inventory_management.SupplierDataSet();
+            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.suppliersTableAdapter = new inventory_management.SupplierDataSetTableAdapters.SuppliersTableAdapter();
+            this.colSupp_ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupp_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupp_Phone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupp_Address = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
@@ -124,9 +119,9 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -153,46 +148,36 @@ namespace inventory_management
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(862, 205, 1046, 612);
             this.layoutControl1.Root = this.Root;
             this.layoutControl1.Size = new System.Drawing.Size(806, 467);
-            this.layoutControl1.TabIndex = 0;
+            this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // searchLookUpClient
             // 
             this.searchLookUpClient.EditValue = "[EditValue isghjghj null]";
-            this.searchLookUpClient.Location = new System.Drawing.Point(117, 343);
+            this.searchLookUpClient.Location = new System.Drawing.Point(142, 343);
             this.searchLookUpClient.Name = "searchLookUpClient";
             this.searchLookUpClient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpClient.Properties.DataSource = this.customersBindingSource;
-            this.searchLookUpClient.Properties.DisplayMember = "Cust_Name";
+            this.searchLookUpClient.Properties.DataSource = this.suppliersBindingSource;
+            this.searchLookUpClient.Properties.DisplayMember = "Supp_Name";
             this.searchLookUpClient.Properties.PopupView = this.searchLookUpEdit1View;
-            this.searchLookUpClient.Properties.ValueMember = "Cust_ID";
-            this.searchLookUpClient.Size = new System.Drawing.Size(657, 28);
+            this.searchLookUpClient.Properties.ValueMember = "Supp_ID";
+            this.searchLookUpClient.Size = new System.Drawing.Size(632, 28);
             this.searchLookUpClient.StyleController = this.layoutControl1;
             this.searchLookUpClient.TabIndex = 18;
-            this.searchLookUpClient.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.searchLookUpClient_ButtonClick);
-            this.searchLookUpClient.ButtonPressed += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.searchLookUpClient_ButtonPressed);
             this.searchLookUpClient.EditValueChanged += new System.EventHandler(this.searchLookUpClient_EditValueChanged);
-            // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = this.customerDataSet;
-            // 
-            // customerDataSet
-            // 
-            this.customerDataSet.DataSetName = "CustomerDataSet";
-            this.customerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // searchLookUpEdit1View
             // 
             this.searchLookUpEdit1View.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.searchLookUpEdit1View.Appearance.Row.Options.UseFont = true;
+            this.searchLookUpEdit1View.Appearance.Row.Options.UseTextOptions = true;
+            this.searchLookUpEdit1View.Appearance.Row.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.searchLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colCust_ID,
-            this.colCust_Name,
-            this.colCust_Phone,
-            this.colCust_Address,
+            this.colSupp_ID,
+            this.colSupp_Name,
+            this.colSupp_Phone,
+            this.colSupp_Address,
             this.colNotes});
             this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
@@ -200,61 +185,19 @@ namespace inventory_management
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
-            // colCust_ID
-            // 
-            this.colCust_ID.AppearanceCell.Options.UseTextOptions = true;
-            this.colCust_ID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colCust_ID.Caption = "ID Client";
-            this.colCust_ID.FieldName = "Cust_ID";
-            this.colCust_ID.Name = "colCust_ID";
-            this.colCust_ID.Visible = true;
-            this.colCust_ID.VisibleIndex = 0;
-            // 
-            // colCust_Name
-            // 
-            this.colCust_Name.Caption = "Nom Client";
-            this.colCust_Name.FieldName = "Cust_Name";
-            this.colCust_Name.Name = "colCust_Name";
-            this.colCust_Name.Visible = true;
-            this.colCust_Name.VisibleIndex = 1;
-            // 
-            // colCust_Phone
-            // 
-            this.colCust_Phone.Caption = "Tel Client";
-            this.colCust_Phone.FieldName = "Cust_Phone";
-            this.colCust_Phone.Name = "colCust_Phone";
-            this.colCust_Phone.Visible = true;
-            this.colCust_Phone.VisibleIndex = 2;
-            // 
-            // colCust_Address
-            // 
-            this.colCust_Address.Caption = "Address Client";
-            this.colCust_Address.FieldName = "Cust_Address";
-            this.colCust_Address.Name = "colCust_Address";
-            this.colCust_Address.Visible = true;
-            this.colCust_Address.VisibleIndex = 3;
-            // 
-            // colNotes
-            // 
-            this.colNotes.Caption = "Notes";
-            this.colNotes.FieldName = "Notes";
-            this.colNotes.Name = "colNotes";
-            this.colNotes.Visible = true;
-            this.colNotes.VisibleIndex = 4;
-            // 
             // txtNotes
             // 
-            this.txtNotes.Location = new System.Drawing.Point(490, 129);
+            this.txtNotes.Location = new System.Drawing.Point(515, 129);
             this.txtNotes.Name = "txtNotes";
-            this.txtNotes.Size = new System.Drawing.Size(284, 28);
+            this.txtNotes.Size = new System.Drawing.Size(259, 28);
             this.txtNotes.StyleController = this.layoutControl1;
             this.txtNotes.TabIndex = 0;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(490, 95);
+            this.txtName.Location = new System.Drawing.Point(515, 95);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(284, 28);
+            this.txtName.Size = new System.Drawing.Size(259, 28);
             this.txtName.StyleController = this.layoutControl1;
             this.txtName.TabIndex = 2;
             conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -264,30 +207,30 @@ namespace inventory_management
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(490, 61);
+            this.txtID.Location = new System.Drawing.Point(515, 61);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(284, 28);
+            this.txtID.Size = new System.Drawing.Size(259, 28);
             this.txtID.StyleController = this.layoutControl1;
             this.txtID.TabIndex = 3;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(117, 61);
+            this.txtPhone.Location = new System.Drawing.Point(142, 61);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(282, 28);
+            this.txtPhone.Size = new System.Drawing.Size(257, 28);
             this.txtPhone.StyleController = this.layoutControl1;
             this.txtPhone.TabIndex = 4;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
             conditionValidationRule1.ErrorText = "Numéro de téléphone est vide";
             conditionValidationRule1.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Information;
             this.dxValidationProvider1.SetValidationRule(this.txtPhone, conditionValidationRule1);
-            this.txtPhone.EditValueChanged += new System.EventHandler(this.txtPohne_EditValueChanged);
+            this.txtPhone.EditValueChanged += new System.EventHandler(this.txtPhone_EditValueChanged);
             // 
             // memoAdress
             // 
-            this.memoAdress.Location = new System.Drawing.Point(117, 95);
+            this.memoAdress.Location = new System.Drawing.Point(142, 95);
             this.memoAdress.Name = "memoAdress";
-            this.memoAdress.Size = new System.Drawing.Size(282, 62);
+            this.memoAdress.Size = new System.Drawing.Size(257, 62);
             this.memoAdress.StyleController = this.layoutControl1;
             this.memoAdress.TabIndex = 5;
             // 
@@ -471,7 +414,7 @@ namespace inventory_management
             this.layoutControlItem4.Name = "layoutControlItem4";
             this.layoutControlItem4.Size = new System.Drawing.Size(373, 34);
             this.layoutControlItem4.Text = "Téléphone";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(94, 13);
             // 
             // layoutControlItem3
             // 
@@ -481,8 +424,8 @@ namespace inventory_management
             this.layoutControlItem3.Location = new System.Drawing.Point(373, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(375, 34);
-            this.layoutControlItem3.Text = "N Client";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem3.Text = "N Fournisseur";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(94, 13);
             // 
             // layoutControlItem2
             // 
@@ -492,8 +435,8 @@ namespace inventory_management
             this.layoutControlItem2.Location = new System.Drawing.Point(373, 34);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(375, 34);
-            this.layoutControlItem2.Text = "Nom Client";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem2.Text = "Nom Fournisseur";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(94, 13);
             // 
             // layoutControlItem6
             // 
@@ -506,7 +449,7 @@ namespace inventory_management
             this.layoutControlItem6.Size = new System.Drawing.Size(373, 68);
             this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem6.Text = "Adress";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(94, 13);
             // 
             // layoutControlItem1
             // 
@@ -517,7 +460,7 @@ namespace inventory_management
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(375, 34);
             this.layoutControlItem1.Text = "Notes";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(94, 13);
             // 
             // tabbedControlGroup2
             // 
@@ -672,7 +615,7 @@ namespace inventory_management
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(748, 34);
             this.layoutControlItem10.Text = "Recherche";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(69, 16);
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(94, 16);
             // 
             // emptySpaceItem1
             // 
@@ -690,33 +633,62 @@ namespace inventory_management
             this.emptySpaceItem3.Size = new System.Drawing.Size(780, 12);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // sqlDataSource1
+            // supplierDataSet
             // 
-            this.sqlDataSource1.Name = "sqlDataSource1";
+            this.supplierDataSet.DataSetName = "SupplierDataSet";
+            this.supplierDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // splitterItem2
+            // suppliersBindingSource
             // 
-            this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(0, 0);
-            this.splitterItem2.Name = "splitterItem2";
-            this.splitterItem2.Size = new System.Drawing.Size(974, 113);
+            this.suppliersBindingSource.DataMember = "Suppliers";
+            this.suppliersBindingSource.DataSource = this.supplierDataSet;
             // 
-            // layoutControlItem13
+            // suppliersTableAdapter
             // 
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 615);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(1006, 25);
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(50, 20);
+            this.suppliersTableAdapter.ClearBeforeFill = true;
             // 
-            // customersTableAdapter
+            // colSupp_ID
             // 
-            this.customersTableAdapter.ClearBeforeFill = true;
+            this.colSupp_ID.AppearanceCell.Options.UseTextOptions = true;
+            this.colSupp_ID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colSupp_ID.Caption = "ID Fournisseur";
+            this.colSupp_ID.FieldName = "Supp_ID";
+            this.colSupp_ID.Name = "colSupp_ID";
+            this.colSupp_ID.Visible = true;
+            this.colSupp_ID.VisibleIndex = 0;
             // 
-            // dxValidationProvider1
+            // colSupp_Name
             // 
-            this.dxValidationProvider1.ValidationMode = DevExpress.XtraEditors.DXErrorProvider.ValidationMode.Auto;
+            this.colSupp_Name.Caption = "Nom Fournisseur";
+            this.colSupp_Name.FieldName = "Supp_Name";
+            this.colSupp_Name.Name = "colSupp_Name";
+            this.colSupp_Name.Visible = true;
+            this.colSupp_Name.VisibleIndex = 1;
             // 
-            // Form_Customer
+            // colSupp_Phone
+            // 
+            this.colSupp_Phone.Caption = "Tel Fournisseur";
+            this.colSupp_Phone.FieldName = "Supp_Phone";
+            this.colSupp_Phone.Name = "colSupp_Phone";
+            this.colSupp_Phone.Visible = true;
+            this.colSupp_Phone.VisibleIndex = 2;
+            // 
+            // colSupp_Address
+            // 
+            this.colSupp_Address.Caption = "Adresse Fournisseur";
+            this.colSupp_Address.FieldName = "Supp_Address";
+            this.colSupp_Address.Name = "colSupp_Address";
+            this.colSupp_Address.Visible = true;
+            this.colSupp_Address.VisibleIndex = 3;
+            // 
+            // colNotes
+            // 
+            this.colNotes.FieldName = "Notes";
+            this.colNotes.Name = "colNotes";
+            this.colNotes.Visible = true;
+            this.colNotes.VisibleIndex = 4;
+            // 
+            // Form_Suppliers
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -727,15 +699,13 @@ namespace inventory_management
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form_Customer";
+            this.Name = "Form_Suppliers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Données Clients";
-            this.Load += new System.EventHandler(this.Form_Customer_Load);
+            this.Text = "Gestion des fournisseurs";
+            this.Load += new System.EventHandler(this.Form_Suppliers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
@@ -767,9 +737,9 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -777,12 +747,24 @@ namespace inventory_management
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpClient;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraEditors.TextEdit txtNotes;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.TextEdit txtPhone;
-        private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraEditors.MemoEdit memoAdress;
+        private DevExpress.XtraEditors.SimpleButton btnLeft2;
+        private DevExpress.XtraEditors.SimpleButton btnRight;
+        private DevExpress.XtraEditors.SimpleButton btnRight2;
+        private DevExpress.XtraEditors.SimpleButton btnLeft;
+        private DevExpress.XtraEditors.SimpleButton btnRefresh;
+        private DevExpress.XtraEditors.SimpleButton btnDelete;
+        private DevExpress.XtraEditors.SimpleButton btnSave;
+        private DevExpress.XtraEditors.SimpleButton btnDeleteAll;
+        private DevExpress.XtraEditors.SimpleButton btnAdd;
+        private DevExpress.XtraEditors.SimpleButton btnExit;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
@@ -792,23 +774,10 @@ namespace inventory_management
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.TabbedControlGroup tabbedControlGroup2;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
-        private DevExpress.XtraEditors.SimpleButton btnLeft2;
-        private DevExpress.XtraEditors.SimpleButton btnRight;
-        private DevExpress.XtraEditors.SimpleButton btnRight2;
-        private DevExpress.XtraEditors.SimpleButton btnLeft;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraLayout.SplitterItem splitterItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraEditors.SimpleButton btnRefresh;
-        private DevExpress.XtraEditors.SimpleButton btnDelete;
-        private DevExpress.XtraEditors.SimpleButton btnSave;
-        private DevExpress.XtraEditors.SimpleButton btnDeleteAll;
-        private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private DevExpress.XtraEditors.SimpleButton btnExit;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
@@ -816,20 +785,18 @@ namespace inventory_management
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem15;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpClient;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private CustomerDataSet customerDataSet;
-        private System.Windows.Forms.BindingSource customersBindingSource;
-        private CustomerDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
-        private DevExpress.XtraGrid.Columns.GridColumn colCust_ID;
-        private DevExpress.XtraGrid.Columns.GridColumn colCust_Name;
-        private DevExpress.XtraGrid.Columns.GridColumn colCust_Phone;
-        private DevExpress.XtraGrid.Columns.GridColumn colCust_Address;
-        private DevExpress.XtraGrid.Columns.GridColumn colNotes;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
+        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
+        private SupplierDataSet supplierDataSet;
+        private System.Windows.Forms.BindingSource suppliersBindingSource;
+        private SupplierDataSetTableAdapters.SuppliersTableAdapter suppliersTableAdapter;
+        private DevExpress.XtraGrid.Columns.GridColumn colSupp_ID;
+        private DevExpress.XtraGrid.Columns.GridColumn colSupp_Name;
+        private DevExpress.XtraGrid.Columns.GridColumn colSupp_Phone;
+        private DevExpress.XtraGrid.Columns.GridColumn colSupp_Address;
+        private DevExpress.XtraGrid.Columns.GridColumn colNotes;
     }
 }
