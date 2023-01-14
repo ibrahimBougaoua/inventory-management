@@ -22,5 +22,10 @@ namespace inventory_management
         {
 
         }
+
+        private void calendarControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
