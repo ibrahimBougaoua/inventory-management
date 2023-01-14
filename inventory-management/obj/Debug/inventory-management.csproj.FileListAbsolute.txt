@@ -45,3 +45,8 @@ C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-
 C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.RichEdit.v22.2.Core.xml
 C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.Office.v22.2.Core.xml
+C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.CodeParser.v22.2.dll
+C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.DataAccess.v22.2.dll
+C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.Xpo.v22.2.dll
+C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.DataAccess.v22.2.xml
+C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.Xpo.v22.2.xml

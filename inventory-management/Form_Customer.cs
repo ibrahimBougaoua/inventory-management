@@ -13,6 +13,8 @@ namespace inventory_management
 {
     public partial class Form_Customer : DevExpress.XtraEditors.XtraForm
     {
+        int row;
+
         public Form_Customer()
         {
             InitializeComponent();
@@ -49,18 +51,18 @@ namespace inventory_management
         public void Show()
         {
             tb.Clear();
-            tb = db.readData("select * from Customers","");
+            tb = db.readData("select * from Customers where Delete_at IS NULL","");
 
             if(tb.Rows.Count <= 0)
             {
-                MessageBox.Show("No data");
+                MessageBox.Show("Aucune donnée sur cet écran");
             } else
             {
-                txtID.Text = tb.Rows[0][0].ToString();
-                txtName.Text = tb.Rows[0][1].ToString();
-                memoAdress.Text = tb.Rows[0][2].ToString();
-                txtPhone.Text = tb.Rows[0][3].ToString();
-                txtNotes.Text = tb.Rows[0][4].ToString();
+                txtID.Text = tb.Rows[row][0].ToString();
+                txtName.Text = tb.Rows[row][1].ToString();
+                memoAdress.Text = tb.Rows[row][2].ToString();
+                txtPhone.Text = tb.Rows[row][3].ToString();
+                txtNotes.Text = tb.Rows[row][4].ToString();
 
                 btnAdd.Enabled = false;
                 btnRefresh.Enabled = true;
@@ -74,6 +76,8 @@ namespace inventory_management
 
         private void Form_Customer_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'customerDataSet.Customers' table. You can move, or remove it, as needed.
+            this.customersTableAdapter.Fill(this.customerDataSet.Customers);
             AutoNumber();
         }
 
@@ -104,13 +108,79 @@ namespace inventory_management
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            db.exceuteData("insert into Customers Values ("+txtID.Text+",'"+txtName.Text+"','"+ memoAdress.Text+ "','"+txtPhone.Text+"','"+ txtNotes.Text+"')", "Effectué avec succès");
+            db.exceuteData("insert into Customers (Cust_ID,Cust_Name,Cust_Address,Cust_Phone,Notes) Values (" + txtID.Text+",'"+txtName.Text+"','"+ memoAdress.Text+ "','"+txtPhone.Text+"','"+ txtNotes.Text+"')", "Effectué avec succès");
             AutoNumber();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            db.readData("update Customers set Cust_Name='"+txtName.Text + "',Cust_Address='"+memoAdress.Text + "',Cust_Phone='"+txtPhone.Text + "',Notes='"+txtNotes.Text + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+            AutoNumber();
+        }
+
+        private void btnDeleteAll_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("êtes-vous sûr ?", "Confirmer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                //db.readData("delete Customers", "Effectué avec succès");
+                db.readData("update Customers set Delete_at='" + DateTime.Now + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+                AutoNumber();
+            }
+        }
+        
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("êtes-vous sûr ?", "Confirmer",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                //db.readData("delete Customers where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+                db.readData("update Customers set Delete_at='" + DateTime.Now + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+                AutoNumber();
+            }
+        }
+
+        private void btnRight2_Click(object sender, EventArgs e)
+        {
+            tb.Clear();
+            tb = db.readData("select count(*) from Customers where Delete_at IS NULL","");
+            row = Convert.ToInt32(tb.Rows[0][0]) - 1;
+            Show();
+            btnRight.Enabled = false;
+            btnLeft.Enabled = true;
+        }
+
+        private void btnRight_Click(object sender, EventArgs e)
+        {
+            tb = db.readData("select count(*) from Customers where Delete_at IS NULL", "");
+            if( (Convert.ToInt32(tb.Rows[0][0]) - 1) > row )
+            {
+                row++;
+                Show();
+                btnLeft.Enabled = true;
+            } else
+            {
+                btnRight.Enabled = false;
+            }
         }
 
         private void btnLeft2_Click(object sender, EventArgs e)
         {
+            row = 0;
             Show();
+            btnLeft.Enabled = false;
+            btnRight.Enabled = true;
+        }
+
+        private void btnLeft_Click(object sender, EventArgs e)
+        {
+            if (row > 0)
+            {
+                row--;
+                Show();
+                btnRight.Enabled = true;
+            } else
+            {
+                btnLeft.Enabled = false;
+            }
         }
     }
 }

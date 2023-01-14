@@ -29,9 +29,11 @@ namespace inventory_management
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Customer));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.searchLookUpClient = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtNotes = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
@@ -75,6 +77,9 @@ namespace inventory_management
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.splitterItem2 = new DevExpress.XtraLayout.SplitterItem();
             this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.customerDataSet = new inventory_management.CustomerDataSet();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.customersTableAdapter = new inventory_management.CustomerDataSetTableAdapters.CustomersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
@@ -111,6 +116,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -147,15 +154,23 @@ namespace inventory_management
             this.searchLookUpClient.Name = "searchLookUpClient";
             this.searchLookUpClient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.searchLookUpClient.Properties.DataSource = this.customersBindingSource;
+            this.searchLookUpClient.Properties.DisplayMember = "Cust_Name";
             this.searchLookUpClient.Properties.PopupView = this.searchLookUpEdit1View;
+            this.searchLookUpClient.Properties.ValueMember = "Cust_ID";
             this.searchLookUpClient.Size = new System.Drawing.Size(657, 28);
             this.searchLookUpClient.StyleController = this.layoutControl1;
             this.searchLookUpClient.TabIndex = 18;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.Name = "sqlDataSource1";
             // 
             // searchLookUpEdit1View
             // 
             this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
+            this.searchLookUpEdit1View.OptionsFind.FindDelay = 500;
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
@@ -224,6 +239,7 @@ namespace inventory_management
             this.btnRight.Size = new System.Drawing.Size(180, 38);
             this.btnRight.StyleController = this.layoutControl1;
             this.btnRight.TabIndex = 7;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
             // btnRight2
             // 
@@ -236,6 +252,7 @@ namespace inventory_management
             this.btnRight2.Size = new System.Drawing.Size(182, 38);
             this.btnRight2.StyleController = this.layoutControl1;
             this.btnRight2.TabIndex = 8;
+            this.btnRight2.Click += new System.EventHandler(this.btnRight2_Click);
             // 
             // btnLeft
             // 
@@ -248,6 +265,7 @@ namespace inventory_management
             this.btnLeft.Size = new System.Drawing.Size(181, 38);
             this.btnLeft.StyleController = this.layoutControl1;
             this.btnLeft.TabIndex = 9;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // btnRefresh
             // 
@@ -273,6 +291,7 @@ namespace inventory_management
             this.btnDelete.StyleController = this.layoutControl1;
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Effacer";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnSave
             // 
@@ -285,6 +304,7 @@ namespace inventory_management
             this.btnSave.StyleController = this.layoutControl1;
             this.btnSave.TabIndex = 13;
             this.btnSave.Text = "Sauvegarder";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDeleteAll
             // 
@@ -297,6 +317,7 @@ namespace inventory_management
             this.btnDeleteAll.StyleController = this.layoutControl1;
             this.btnDeleteAll.TabIndex = 14;
             this.btnDeleteAll.Text = "Supprimer tout";
+            this.btnDeleteAll.Click += new System.EventHandler(this.btnDeleteAll_Click);
             // 
             // btnAdd
             // 
@@ -606,6 +627,20 @@ namespace inventory_management
             this.layoutControlItem13.Size = new System.Drawing.Size(1006, 25);
             this.layoutControlItem13.TextSize = new System.Drawing.Size(50, 20);
             // 
+            // customerDataSet
+            // 
+            this.customerDataSet.DataSetName = "CustomerDataSet";
+            this.customerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = this.customerDataSet;
+            // 
+            // customersTableAdapter
+            // 
+            this.customersTableAdapter.ClearBeforeFill = true;
+            // 
             // Form_Customer
             // 
             this.Appearance.Options.UseFont = true;
@@ -656,6 +691,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitterItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customerDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -707,5 +744,9 @@ namespace inventory_management
         private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpClient;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private CustomerDataSet customerDataSet;
+        private System.Windows.Forms.BindingSource customersBindingSource;
+        private CustomerDataSetTableAdapters.CustomersTableAdapter customersTableAdapter;
     }
 }
