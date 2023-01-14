@@ -137,13 +137,17 @@ namespace inventory_management
             {
                 db.exceuteData("insert into Customers (Cust_ID,Cust_Name,Cust_Address,Cust_Phone,Notes) Values (" + txtID.Text + ",'" + txtName.Text + "','" + memoAdress.Text + "','" + txtPhone.Text + "','" + txtNotes.Text + "')", "Effectué avec succès");
                 AutoNumber();
+                this.customersTableAdapter.Fill(this.customerDataSet.Customers);
             }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            db.readData("update Customers set Cust_Name='"+txtName.Text + "',Cust_Address='"+memoAdress.Text + "',Cust_Phone='"+txtPhone.Text + "',Notes='"+txtNotes.Text + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
-            AutoNumber();
+            if (dxValidationProvider1.Validate())
+            {
+                db.exceuteData("update Customers set Cust_Name='" + txtName.Text + "',Cust_Address='" + memoAdress.Text + "',Cust_Phone='" + txtPhone.Text + "',Notes='" + txtNotes.Text + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+                this.customersTableAdapter.Fill(this.customerDataSet.Customers);
+            }
         }
 
         private void btnDeleteAll_Click(object sender, EventArgs e)
@@ -151,7 +155,7 @@ namespace inventory_management
             if (MessageBox.Show("êtes-vous sûr ?", "Confirmer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 //db.readData("delete Customers", "Effectué avec succès");
-                db.readData("update Customers set Delete_at='" + DateTime.Now + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+                db.exceuteData("update Customers set Delete_at='" + DateTime.Now + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
                 AutoNumber();
             }
         }
@@ -161,7 +165,7 @@ namespace inventory_management
             if(MessageBox.Show("êtes-vous sûr ?", "Confirmer",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 //db.readData("delete Customers where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
-                db.readData("update Customers set Delete_at='" + DateTime.Now + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
+                db.exceuteData("update Customers set Delete_at='" + DateTime.Now + "' where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
                 AutoNumber();
             }
         }

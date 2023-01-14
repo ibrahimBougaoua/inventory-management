@@ -107,8 +107,9 @@ namespace inventory_management
         {
             if (dxValidationProvider1.Validate())
             {
-            db.exceuteData("insert into Suppliers (Supp_ID,Supp_Name,Supp_Address,Supp_Phone,Notes) Values (" + txtID.Text + ",'" + txtName.Text + "','" + memoAdress.Text + "','" + txtPhone.Text + "','" + txtNotes.Text + "')", "Effectué avec succès");
-            AutoNumber();
+                db.exceuteData("insert into Suppliers (Supp_ID,Supp_Name,Supp_Address,Supp_Phone,Notes) Values (" + txtID.Text + ",'" + txtName.Text + "','" + memoAdress.Text + "','" + txtPhone.Text + "','" + txtNotes.Text + "')", "Effectué avec succès");
+                AutoNumber();
+                this.suppliersTableAdapter.Fill(this.supplierDataSet.Suppliers);
             }
         }
 
@@ -119,8 +120,11 @@ namespace inventory_management
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            db.readData("update Suppliers set Supp_Name='" + txtName.Text + "',Supp_Address='" + memoAdress.Text + "',Supp_Phone='" + txtPhone.Text + "',Notes='" + txtNotes.Text + "' where Supp_ID = " + txtID.Text + "", "Effectué avec succès");
-            AutoNumber();
+            if (dxValidationProvider1.Validate())
+            {
+                db.exceuteData("update Suppliers set Supp_Name='" + txtName.Text + "',Supp_Address='" + memoAdress.Text + "',Supp_Phone='" + txtPhone.Text + "',Notes='" + txtNotes.Text + "' where Supp_ID = " + txtID.Text + "", "Effectué avec succès");
+                this.suppliersTableAdapter.Fill(this.supplierDataSet.Suppliers);
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -128,7 +132,7 @@ namespace inventory_management
             if (MessageBox.Show("êtes-vous sûr ?", "Confirmer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 //db.readData("delete Customers where Cust_ID = " + txtID.Text + "", "Effectué avec succès");
-                db.readData("update Suppliers set Delete_at='" + DateTime.Now + "' where Supp_ID = " + txtID.Text + "", "Effectué avec succès");
+                db.exceuteData("update Suppliers set Delete_at='" + DateTime.Now + "' where Supp_ID = " + txtID.Text + "", "Effectué avec succès");
                 AutoNumber();
             }
         }
@@ -138,7 +142,7 @@ namespace inventory_management
             if (MessageBox.Show("êtes-vous sûr ?", "Confirmer", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 //db.readData("delete Customers", "Effectué avec succès");
-                db.readData("update Suppliers set Delete_at='" + DateTime.Now + "' where Supp_ID = " + txtID.Text + "", "Effectué avec succès");
+                db.exceuteData("update Suppliers set Delete_at='" + DateTime.Now + "' where Supp_ID = " + txtID.Text + "", "Effectué avec succès");
                 AutoNumber();
             }
         }
@@ -199,7 +203,7 @@ namespace inventory_management
         {
             // TODO: This line of code loads data into the 'supplierDataSet.Suppliers' table. You can move, or remove it, as needed.
             this.suppliersTableAdapter.Fill(this.supplierDataSet.Suppliers);
-
+            AutoNumber();
         }
 
         private void searchLookUpClient_EditValueChanged(object sender, EventArgs e)
