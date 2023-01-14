@@ -76,6 +76,11 @@
       <DependentUpon>CustomerDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="DeservedTypeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeservedTypeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +93,12 @@
     <Compile Include="Form_Customer.Designer.cs">
       <DependentUpon>Form_Customer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_DeservedType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DeservedType.Designer.cs">
+      <DependentUpon>Frm_DeservedType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -95,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Customer.resx">
       <DependentUpon>Form_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DeservedType.resx">
+      <DependentUpon>Frm_DeservedType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -117,6 +131,17 @@
     </None>
     <None Include="CustomerDataSet.xss">
       <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DeservedTypeDataSet.xsc">
+      <DependentUpon>DeservedTypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DeservedTypeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeservedTypeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeservedTypeDataSet.xss">
+      <DependentUpon>DeservedTypeDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

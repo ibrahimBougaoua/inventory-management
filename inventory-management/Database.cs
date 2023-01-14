@@ -45,7 +45,7 @@ namespace inventory_management
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                if (message != "")
+                if (message == "")
                     MessageBox.Show(message, "Confirmer", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             } catch (Exception e)

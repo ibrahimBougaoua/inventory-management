@@ -230,5 +230,15 @@ namespace inventory_management
         {
             MessageBox.Show(e.ToString());
         }
+
+        private void btnRefresh_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
