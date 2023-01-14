@@ -45,7 +45,6 @@ namespace inventory_management
             btnRefresh.Enabled = true;
             btnDelete.Enabled = false;
             btnDeleteAll.Enabled = false;
-            btnExit.Enabled = false;
             btnSave.Enabled = false;
         }
 
@@ -70,7 +69,6 @@ namespace inventory_management
                 btnRefresh.Enabled = true;
                 btnDelete.Enabled = true;
                 btnDeleteAll.Enabled = true;
-                btnExit.Enabled = true;
                 btnSave.Enabled = true;
             }
 
@@ -96,7 +94,6 @@ namespace inventory_management
                 btnRefresh.Enabled = true;
                 btnDelete.Enabled = true;
                 btnDeleteAll.Enabled = true;
-                btnExit.Enabled = true;
                 btnSave.Enabled = true;
             }
 
