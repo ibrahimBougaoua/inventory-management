@@ -70,11 +70,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Deserved.cs" />
     <Compile Include="CustomerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -87,6 +89,18 @@
     </Compile>
     <Compile Include="Form_Customer.Designer.cs">
       <DependentUpon>Form_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Deserved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Deserved.Designer.cs">
+      <DependentUpon>Form_Deserved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DeservedType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DeservedType.Designer.cs">
+      <DependentUpon>Form_DeservedType.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,6 +120,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Customer.resx">
       <DependentUpon>Form_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Deserved.resx">
+      <DependentUpon>Form_Deserved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DeservedType.resx">
+      <DependentUpon>Form_DeservedType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Suppliers.resx">
       <DependentUpon>Form_Suppliers.cs</DependentUpon>
@@ -153,6 +173,9 @@
     <None Include="SupplierDataSet.xss">
       <DependentUpon>SupplierDataSet.xsd</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
