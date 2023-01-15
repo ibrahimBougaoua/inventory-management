@@ -32,13 +32,13 @@ namespace inventory_management
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DeservedType));
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.searchLookUpClient = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.deservedTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.deservedTypeDataSet = new inventory_management.DeservedTypeDataSet();
-            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colDes_ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
             this.btnLeft2 = new DevExpress.XtraEditors.SimpleButton();
@@ -51,6 +51,8 @@ namespace inventory_management
             this.btnDeleteAll = new DevExpress.XtraEditors.SimpleButton();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
+            this.DeservedLockup = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -70,19 +72,18 @@ namespace inventory_management
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
-            this.deserved_TypeTableAdapter = new inventory_management.DeservedTypeDataSetTableAdapters.Deserved_TypeTableAdapter();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.deserved_TypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deservedTypeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deservedTypeDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DeservedLockup.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -102,15 +103,15 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deserved_TypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.searchLookUpClient);
             this.layoutControl1.Controls.Add(this.txtName);
             this.layoutControl1.Controls.Add(this.txtID);
             this.layoutControl1.Controls.Add(this.btnLeft2);
@@ -123,6 +124,7 @@ namespace inventory_management
             this.layoutControl1.Controls.Add(this.btnDeleteAll);
             this.layoutControl1.Controls.Add(this.btnAdd);
             this.layoutControl1.Controls.Add(this.btnExit);
+            this.layoutControl1.Controls.Add(this.DeservedLockup);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -132,73 +134,13 @@ namespace inventory_management
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // searchLookUpClient
-            // 
-            this.searchLookUpClient.EditValue = "[EditValue isghjghj null]";
-            this.searchLookUpClient.Location = new System.Drawing.Point(117, 316);
-            this.searchLookUpClient.Name = "searchLookUpClient";
-            this.searchLookUpClient.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.searchLookUpClient.Properties.Appearance.Options.UseFont = true;
-            this.searchLookUpClient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpClient.Properties.DataSource = this.deservedTypeBindingSource;
-            this.searchLookUpClient.Properties.DisplayMember = "Name";
-            this.searchLookUpClient.Properties.PopupView = this.searchLookUpEdit1View;
-            this.searchLookUpClient.Properties.ValueMember = "Des_ID";
-            this.searchLookUpClient.Size = new System.Drawing.Size(715, 34);
-            this.searchLookUpClient.StyleController = this.layoutControl1;
-            this.searchLookUpClient.TabIndex = 18;
-            this.searchLookUpClient.EditValueChanged += new System.EventHandler(this.searchLookUpClient_EditValueChanged);
-            // 
-            // deservedTypeBindingSource
-            // 
-            this.deservedTypeBindingSource.DataMember = "Deserved_Type";
-            this.deservedTypeBindingSource.DataSource = this.deservedTypeDataSet;
-            // 
-            // deservedTypeDataSet
-            // 
-            this.deservedTypeDataSet.DataSetName = "DeservedTypeDataSet";
-            this.deservedTypeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // searchLookUpEdit1View
-            // 
-            this.searchLookUpEdit1View.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.searchLookUpEdit1View.Appearance.Row.Options.UseFont = true;
-            this.searchLookUpEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colDes_ID,
-            this.colName});
-            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
-            this.searchLookUpEdit1View.OptionsFind.FindDelay = 300;
-            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
-            // 
-            // colDes_ID
-            // 
-            this.colDes_ID.AppearanceCell.Options.UseTextOptions = true;
-            this.colDes_ID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colDes_ID.FieldName = "Des_ID";
-            this.colDes_ID.Name = "colDes_ID";
-            this.colDes_ID.Visible = true;
-            this.colDes_ID.VisibleIndex = 0;
-            this.colDes_ID.Width = 119;
-            // 
-            // colName
-            // 
-            this.colName.Caption = "Depense Type";
-            this.colName.FieldName = "Name";
-            this.colName.Name = "colName";
-            this.colName.Visible = true;
-            this.colName.VisibleIndex = 1;
-            this.colName.Width = 873;
-            // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(520, 61);
+            this.txtName.Location = new System.Drawing.Point(577, 61);
             this.txtName.Name = "txtName";
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtName.Properties.Appearance.Options.UseFont = true;
-            this.txtName.Size = new System.Drawing.Size(312, 34);
+            this.txtName.Size = new System.Drawing.Size(255, 34);
             this.txtName.StyleController = this.layoutControl1;
             this.txtName.TabIndex = 2;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -209,11 +151,11 @@ namespace inventory_management
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(117, 61);
+            this.txtID.Location = new System.Drawing.Point(174, 61);
             this.txtID.Name = "txtID";
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtID.Properties.Appearance.Options.UseFont = true;
-            this.txtID.Size = new System.Drawing.Size(312, 34);
+            this.txtID.Size = new System.Drawing.Size(255, 34);
             this.txtID.StyleController = this.layoutControl1;
             this.txtID.TabIndex = 3;
             // 
@@ -347,6 +289,30 @@ namespace inventory_management
             this.btnExit.Text = "Quitter";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // DeservedLockup
+            // 
+            this.DeservedLockup.Location = new System.Drawing.Point(174, 326);
+            this.DeservedLockup.Name = "DeservedLockup";
+            this.DeservedLockup.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.DeservedLockup.Properties.Appearance.Options.UseFont = true;
+            this.DeservedLockup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.DeservedLockup.Properties.DataSource = this.deserved_TypeBindingSource;
+            this.DeservedLockup.Properties.DisplayMember = "Name";
+            this.DeservedLockup.Properties.NullText = "";
+            this.DeservedLockup.Properties.PopupView = this.searchLookUpEdit1View;
+            this.DeservedLockup.Properties.ValueMember = "Des_ID";
+            this.DeservedLockup.Size = new System.Drawing.Size(658, 34);
+            this.DeservedLockup.StyleController = this.layoutControl1;
+            this.DeservedLockup.TabIndex = 17;
+            // 
+            // searchLookUpEdit1View
+            // 
+            this.searchLookUpEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.searchLookUpEdit1View.Name = "searchLookUpEdit1View";
+            this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -394,7 +360,7 @@ namespace inventory_management
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(403, 40);
             this.layoutControlItem3.Text = "ID Type";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(126, 13);
             // 
             // layoutControlItem2
             // 
@@ -405,7 +371,7 @@ namespace inventory_management
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(403, 40);
             this.layoutControlItem2.Text = "Libile Type";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(69, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(126, 13);
             // 
             // tabbedControlGroup2
             // 
@@ -485,7 +451,7 @@ namespace inventory_management
             this.layoutControlItem16,
             this.layoutControlItem17,
             this.emptySpaceItem2,
-            this.layoutControlItem10});
+            this.layoutControlItem1});
             this.layoutControlGroup3.Location = new System.Drawing.Point(0, 263);
             this.layoutControlGroup3.Name = "layoutControlGroup3";
             this.layoutControlGroup3.Size = new System.Drawing.Size(838, 147);
@@ -548,19 +514,18 @@ namespace inventory_management
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 40);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(0, 0);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
             this.emptySpaceItem2.Size = new System.Drawing.Size(806, 10);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // layoutControlItem10
+            // layoutControlItem1
             // 
-            this.layoutControlItem10.Control = this.searchLookUpClient;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(806, 40);
-            this.layoutControlItem10.Text = "Recherche";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(69, 16);
+            this.layoutControlItem1.Control = this.DeservedLockup;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 10);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(806, 40);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(126, 16);
             // 
             // emptySpaceItem1
             // 
@@ -578,9 +543,32 @@ namespace inventory_management
             this.emptySpaceItem3.Size = new System.Drawing.Size(838, 16);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // deserved_TypeTableAdapter
+            // sqlDataSource1
             // 
-            this.deserved_TypeTableAdapter.ClearBeforeFill = true;
+            this.sqlDataSource1.ConnectionName = "Sales_System";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            columnExpression1.ColumnName = "Des_ID";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table1.Name = "Deserved_Type";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Name = "Deserved_Type";
+            selectQuery1.Tables.Add(table1);
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            selectQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkRlc2VydmVkX1R5cGUiPjxGa" +
+    "WVsZCBOYW1lPSJEZXNfSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJOYW1lIiBUeXBlPSJTd" +
+    "HJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=";
+            // 
+            // deserved_TypeBindingSource
+            // 
+            this.deserved_TypeBindingSource.DataMember = "Deserved_Type";
+            this.deserved_TypeBindingSource.DataSource = this.sqlDataSource1;
             // 
             // Frm_DeservedType
             // 
@@ -599,12 +587,10 @@ namespace inventory_management
             this.Load += new System.EventHandler(this.Frm_DeservedType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deservedTypeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.deservedTypeDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DeservedLockup.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
@@ -624,10 +610,11 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.deserved_TypeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -635,8 +622,6 @@ namespace inventory_management
         #endregion
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpClient;
-        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraEditors.TextEdit txtName;
         private DevExpress.XtraEditors.TextEdit txtID;
         private DevExpress.XtraEditors.SimpleButton btnLeft2;
@@ -668,14 +653,13 @@ namespace inventory_management
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem2;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider dxValidationProvider1;
-        private DeservedTypeDataSet deservedTypeDataSet;
-        private System.Windows.Forms.BindingSource deservedTypeBindingSource;
-        private DeservedTypeDataSetTableAdapters.Deserved_TypeTableAdapter deserved_TypeTableAdapter;
-        private DevExpress.XtraGrid.Columns.GridColumn colDes_ID;
-        private DevExpress.XtraGrid.Columns.GridColumn colName;
+        private DevExpress.XtraEditors.SearchLookUpEdit DeservedLockup;
+        private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private System.Windows.Forms.BindingSource deserved_TypeBindingSource;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }

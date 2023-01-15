@@ -70,12 +70,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Deserved.cs" />
     <Compile Include="CustomerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CustomerDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="DeservedDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeservedDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DeservedTypeDataSet.cs">
+      <DependentUpon>DeservedTypeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DeservedTypeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,6 +151,17 @@
     <None Include="CustomerDataSet.xss">
       <DependentUpon>CustomerDataSet.xsd</DependentUpon>
     </None>
+    <None Include="DeservedDataSet.xsc">
+      <DependentUpon>DeservedDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DeservedDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeservedDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeservedDataSet.xss">
+      <DependentUpon>DeservedDataSet.xsd</DependentUpon>
+    </None>
     <None Include="DeservedTypeDataSet.xsc">
       <DependentUpon>DeservedTypeDataSet.xsd</DependentUpon>
     </None>
@@ -162,6 +183,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
