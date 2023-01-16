@@ -109,3 +109,4 @@ C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\invent
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.Form_Product.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Brand.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Category.resources
+C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Family.resources
