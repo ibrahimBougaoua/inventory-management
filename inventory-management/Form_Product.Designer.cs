@@ -48,8 +48,6 @@ namespace inventory_management
             this.txtNote = new DevExpress.XtraEditors.MemoEdit();
             this.cbxType = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colDes_ID1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colName1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -73,12 +71,19 @@ namespace inventory_management
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.cbxType1 = new DevExpress.XtraEditors.SearchLookUpEdit();
-            this.gridView11 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colDes_ID11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colName11 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.cbxType2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.gridView12 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.layoutControlItem18 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem19 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem20 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.colDes_ID1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDes_ID12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName12 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colDes_ID111 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName111 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
@@ -110,14 +115,17 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxType1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxType2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.simpleButton3);
             this.layoutControl1.Controls.Add(this.simpleButton2);
             this.layoutControl1.Controls.Add(this.searchLookUpClient);
             this.layoutControl1.Controls.Add(this.btnLeft2);
@@ -134,7 +142,8 @@ namespace inventory_management
             this.layoutControl1.Controls.Add(this.txtNote);
             this.layoutControl1.Controls.Add(this.cbxType);
             this.layoutControl1.Controls.Add(this.simpleButton1);
-            this.layoutControl1.Controls.Add(this.cbxType1);
+            this.layoutControl1.Controls.Add(this.cbxType2);
+            this.layoutControl1.Controls.Add(this.textEdit1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -148,7 +157,7 @@ namespace inventory_management
             // 
             this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(566, 53);
+            this.simpleButton2.Location = new System.Drawing.Point(566, 97);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(60, 38);
             this.simpleButton2.StyleController = this.layoutControl1;
@@ -157,14 +166,14 @@ namespace inventory_management
             // searchLookUpClient
             // 
             this.searchLookUpClient.EditValue = "[EditValue isghjghj null]";
-            this.searchLookUpClient.Location = new System.Drawing.Point(135, 543);
+            this.searchLookUpClient.Location = new System.Drawing.Point(156, 543);
             this.searchLookUpClient.Name = "searchLookUpClient";
             this.searchLookUpClient.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.searchLookUpClient.Properties.Appearance.Options.UseFont = true;
             this.searchLookUpClient.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.searchLookUpClient.Properties.PopupView = this.searchLookUpEdit1View;
-            this.searchLookUpClient.Size = new System.Drawing.Size(1038, 34);
+            this.searchLookUpClient.Size = new System.Drawing.Size(1017, 34);
             this.searchLookUpClient.StyleController = this.layoutControl1;
             this.searchLookUpClient.TabIndex = 10;
             // 
@@ -184,9 +193,9 @@ namespace inventory_management
             this.btnLeft2.Appearance.Options.UseFont = true;
             this.btnLeft2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft2.ImageOptions.Image")));
             this.btnLeft2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnLeft2.Location = new System.Drawing.Point(32, 274);
+            this.btnLeft2.Location = new System.Drawing.Point(32, 234);
             this.btnLeft2.Name = "btnLeft2";
-            this.btnLeft2.Size = new System.Drawing.Size(280, 210);
+            this.btnLeft2.Size = new System.Drawing.Size(280, 250);
             this.btnLeft2.StyleController = this.layoutControl1;
             this.btnLeft2.TabIndex = 6;
             // 
@@ -196,9 +205,9 @@ namespace inventory_management
             this.btnRight.Appearance.Options.UseFont = true;
             this.btnRight.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRight.ImageOptions.Image")));
             this.btnRight.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnRight.Location = new System.Drawing.Point(606, 274);
+            this.btnRight.Location = new System.Drawing.Point(606, 234);
             this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(279, 210);
+            this.btnRight.Size = new System.Drawing.Size(279, 250);
             this.btnRight.StyleController = this.layoutControl1;
             this.btnRight.TabIndex = 8;
             // 
@@ -208,9 +217,9 @@ namespace inventory_management
             this.btnRight2.Appearance.Options.UseFont = true;
             this.btnRight2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRight2.ImageOptions.Image")));
             this.btnRight2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnRight2.Location = new System.Drawing.Point(891, 274);
+            this.btnRight2.Location = new System.Drawing.Point(891, 234);
             this.btnRight2.Name = "btnRight2";
-            this.btnRight2.Size = new System.Drawing.Size(282, 210);
+            this.btnRight2.Size = new System.Drawing.Size(282, 250);
             this.btnRight2.StyleController = this.layoutControl1;
             this.btnRight2.TabIndex = 9;
             // 
@@ -220,9 +229,9 @@ namespace inventory_management
             this.btnLeft.Appearance.Options.UseFont = true;
             this.btnLeft.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLeft.ImageOptions.Image")));
             this.btnLeft.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            this.btnLeft.Location = new System.Drawing.Point(318, 274);
+            this.btnLeft.Location = new System.Drawing.Point(318, 234);
             this.btnLeft.Name = "btnLeft";
-            this.btnLeft.Size = new System.Drawing.Size(282, 210);
+            this.btnLeft.Size = new System.Drawing.Size(282, 250);
             this.btnLeft.StyleController = this.layoutControl1;
             this.btnLeft.TabIndex = 7;
             // 
@@ -301,7 +310,7 @@ namespace inventory_management
             // dtpDate
             // 
             this.dtpDate.EditValue = null;
-            this.dtpDate.Location = new System.Drawing.Point(799, 53);
+            this.dtpDate.Location = new System.Drawing.Point(820, 53);
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.dtpDate.Properties.Appearance.Options.UseFont = true;
@@ -325,13 +334,13 @@ namespace inventory_management
             this.dtpDate.Properties.MaskSettings.Set("spinWithCarry", true);
             this.dtpDate.Properties.UseMaskAsDisplayFormat = true;
             this.dtpDate.Properties.VistaDisplayMode = DevExpress.Utils.DefaultBoolean.False;
-            this.dtpDate.Size = new System.Drawing.Size(374, 34);
+            this.dtpDate.Size = new System.Drawing.Size(353, 34);
             this.dtpDate.StyleController = this.layoutControl1;
             this.dtpDate.TabIndex = 2;
             // 
             // txtNote
             // 
-            this.txtNote.Location = new System.Drawing.Point(799, 93);
+            this.txtNote.Location = new System.Drawing.Point(820, 97);
             this.txtNote.Name = "txtNote";
             this.txtNote.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtNote.Properties.Appearance.Options.UseFont = true;
@@ -343,13 +352,13 @@ namespace inventory_management
             this.txtNote.Properties.AppearanceFocused.Options.UseForeColor = true;
             this.txtNote.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.txtNote.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.txtNote.Size = new System.Drawing.Size(374, 38);
+            this.txtNote.Size = new System.Drawing.Size(353, 78);
             this.txtNote.StyleController = this.layoutControl1;
             this.txtNote.TabIndex = 3;
             // 
             // cbxType
             // 
-            this.cbxType.Location = new System.Drawing.Point(135, 53);
+            this.cbxType.Location = new System.Drawing.Point(156, 97);
             this.cbxType.Name = "cbxType";
             this.cbxType.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.cbxType.Properties.Appearance.Options.UseFont = true;
@@ -364,7 +373,7 @@ namespace inventory_management
             this.cbxType.Properties.PopupSizeable = false;
             this.cbxType.Properties.PopupView = this.gridView1;
             this.cbxType.Properties.ValueMember = "Des_ID";
-            this.cbxType.Size = new System.Drawing.Size(425, 34);
+            this.cbxType.Size = new System.Drawing.Size(404, 34);
             this.cbxType.StyleController = this.layoutControl1;
             this.cbxType.TabIndex = 4;
             // 
@@ -382,28 +391,11 @@ namespace inventory_management
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // colDes_ID1
-            // 
-            this.colDes_ID1.FieldName = "Des_ID";
-            this.colDes_ID1.Name = "colDes_ID1";
-            this.colDes_ID1.Visible = true;
-            this.colDes_ID1.VisibleIndex = 0;
-            this.colDes_ID1.Width = 100;
-            // 
-            // colName1
-            // 
-            this.colName1.Caption = "Type Depense";
-            this.colName1.FieldName = "Name";
-            this.colName1.Name = "colName1";
-            this.colName1.Visible = true;
-            this.colName1.VisibleIndex = 1;
-            this.colName1.Width = 892;
-            // 
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(632, 53);
+            this.simpleButton1.Location = new System.Drawing.Point(632, 97);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(58, 38);
             this.simpleButton1.StyleController = this.layoutControl1;
@@ -416,8 +408,7 @@ namespace inventory_management
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup3,
             this.layoutControlGroup1,
-            this.layoutControlGroup2,
-            this.emptySpaceItem1});
+            this.layoutControlGroup2});
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(1205, 702);
             this.Root.TextVisible = false;
@@ -486,7 +477,7 @@ namespace inventory_management
             this.layoutControlItem10.Name = "layoutControlItem10";
             this.layoutControlItem10.Size = new System.Drawing.Size(1147, 40);
             this.layoutControlItem10.Text = "Recherche";
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(87, 16);
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(108, 16);
             // 
             // layoutControlItem17
             // 
@@ -558,10 +549,12 @@ namespace inventory_management
             this.layoutControlItem1,
             this.layoutControlItem3,
             this.layoutControlItem13,
-            this.layoutControlItem6});
+            this.layoutControlItem18,
+            this.layoutControlItem19,
+            this.layoutControlItem20});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1179, 137);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1179, 181);
             this.layoutControlGroup1.Text = "Donnée Type Depense";
             // 
             // layoutControlItem4
@@ -573,22 +566,20 @@ namespace inventory_management
             this.layoutControlItem4.CustomizationFormText = "Libile Type";
             this.layoutControlItem4.Location = new System.Drawing.Point(664, 0);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(483, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(483, 44);
             this.layoutControlItem4.Text = "Date Payment :";
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(87, 13);
+            this.layoutControlItem4.TextSize = new System.Drawing.Size(108, 13);
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.layoutControlItem2.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.layoutControlItem2.AppearanceItemCaption.Options.UseFont = true;
             this.layoutControlItem2.Control = this.cbxType;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.MinSize = new System.Drawing.Size(175, 40);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 44);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(534, 44);
-            this.layoutControlItem2.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem2.Text = "Type Depense";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(87, 13);
+            this.layoutControlItem2.Text = "Code Barre";
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(108, 16);
             // 
             // layoutControlItem1
             // 
@@ -597,16 +588,16 @@ namespace inventory_management
             this.layoutControlItem1.Control = this.txtNote;
             this.layoutControlItem1.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem1.CustomizationFormText = "Libile Type";
-            this.layoutControlItem1.Location = new System.Drawing.Point(664, 40);
+            this.layoutControlItem1.Location = new System.Drawing.Point(664, 44);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(483, 44);
+            this.layoutControlItem1.Size = new System.Drawing.Size(483, 84);
             this.layoutControlItem1.Text = "Notes :";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(87, 13);
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(108, 13);
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.simpleButton1;
-            this.layoutControlItem3.Location = new System.Drawing.Point(600, 0);
+            this.layoutControlItem3.Location = new System.Drawing.Point(600, 44);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(64, 44);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -615,9 +606,11 @@ namespace inventory_management
             // layoutControlItem13
             // 
             this.layoutControlItem13.Control = this.simpleButton2;
-            this.layoutControlItem13.Location = new System.Drawing.Point(534, 0);
+            this.layoutControlItem13.Location = new System.Drawing.Point(534, 44);
+            this.layoutControlItem13.MinSize = new System.Drawing.Size(46, 44);
             this.layoutControlItem13.Name = "layoutControlItem13";
             this.layoutControlItem13.Size = new System.Drawing.Size(66, 44);
+            this.layoutControlItem13.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
             // 
@@ -633,9 +626,9 @@ namespace inventory_management
             this.layoutControlItem7,
             this.layoutControlItem8,
             this.layoutControlItem9});
-            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 221);
+            this.layoutControlGroup2.Location = new System.Drawing.Point(0, 181);
             this.layoutControlGroup2.Name = "layoutControlGroup2";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(1179, 269);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1179, 309);
             this.layoutControlGroup2.Text = "Les actions de mobilité";
             // 
             // layoutControlItem5
@@ -644,7 +637,7 @@ namespace inventory_management
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem5.MinSize = new System.Drawing.Size(46, 44);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(286, 216);
+            this.layoutControlItem5.Size = new System.Drawing.Size(286, 256);
             this.layoutControlItem5.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
@@ -655,7 +648,7 @@ namespace inventory_management
             this.layoutControlItem7.Location = new System.Drawing.Point(574, 0);
             this.layoutControlItem7.MinSize = new System.Drawing.Size(46, 44);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(285, 216);
+            this.layoutControlItem7.Size = new System.Drawing.Size(285, 256);
             this.layoutControlItem7.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
@@ -666,7 +659,7 @@ namespace inventory_management
             this.layoutControlItem8.Location = new System.Drawing.Point(859, 0);
             this.layoutControlItem8.MinSize = new System.Drawing.Size(46, 44);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(288, 216);
+            this.layoutControlItem8.Size = new System.Drawing.Size(288, 256);
             this.layoutControlItem8.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
@@ -677,83 +670,149 @@ namespace inventory_management
             this.layoutControlItem9.Location = new System.Drawing.Point(286, 0);
             this.layoutControlItem9.MinSize = new System.Drawing.Size(46, 44);
             this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(288, 216);
+            this.layoutControlItem9.Size = new System.Drawing.Size(288, 256);
             this.layoutControlItem9.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
-            // emptySpaceItem1
+            // cbxType2
             // 
-            this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 137);
-            this.emptySpaceItem1.Name = "emptySpaceItem1";
-            this.emptySpaceItem1.Size = new System.Drawing.Size(1179, 84);
-            this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // cbxType1
-            // 
-            this.cbxType1.Location = new System.Drawing.Point(135, 97);
-            this.cbxType1.Name = "cbxType1";
-            this.cbxType1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.cbxType1.Properties.Appearance.Options.UseFont = true;
-            this.cbxType1.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.cbxType1.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.cbxType1.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.cbxType1.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cbxType1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbxType2.Location = new System.Drawing.Point(156, 53);
+            this.cbxType2.Name = "cbxType2";
+            this.cbxType2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbxType2.Properties.Appearance.Options.UseFont = true;
+            this.cbxType2.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.cbxType2.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.cbxType2.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.cbxType2.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cbxType2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbxType1.Properties.DisplayMember = "Name";
-            this.cbxType1.Properties.NullText = "";
-            this.cbxType1.Properties.PopupSizeable = false;
-            this.cbxType1.Properties.PopupView = this.gridView11;
-            this.cbxType1.Properties.ValueMember = "Des_ID";
-            this.cbxType1.Size = new System.Drawing.Size(555, 34);
-            this.cbxType1.StyleController = this.layoutControl1;
-            this.cbxType1.TabIndex = 4;
+            this.cbxType2.Properties.DisplayMember = "Name";
+            this.cbxType2.Properties.NullText = "";
+            this.cbxType2.Properties.PopupSizeable = false;
+            this.cbxType2.Properties.PopupView = this.gridView12;
+            this.cbxType2.Properties.ValueMember = "Des_ID";
+            this.cbxType2.Size = new System.Drawing.Size(470, 34);
+            this.cbxType2.StyleController = this.layoutControl1;
+            this.cbxType2.TabIndex = 4;
             // 
-            // gridView11
+            // gridView12
             // 
-            this.gridView11.Appearance.FilterPanel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.gridView11.Appearance.FilterPanel.Options.UseFont = true;
-            this.gridView11.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.gridView11.Appearance.Row.Options.UseFont = true;
-            this.gridView11.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colDes_ID11,
-            this.colName11});
-            this.gridView11.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
-            this.gridView11.Name = "gridView11";
-            this.gridView11.OptionsSelection.EnableAppearanceFocusedCell = false;
-            this.gridView11.OptionsView.ShowGroupPanel = false;
+            this.gridView12.Appearance.FilterPanel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.gridView12.Appearance.FilterPanel.Options.UseFont = true;
+            this.gridView12.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.gridView12.Appearance.Row.Options.UseFont = true;
+            this.gridView12.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colDes_ID12,
+            this.colName12});
+            this.gridView12.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView12.Name = "gridView12";
+            this.gridView12.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView12.OptionsView.ShowGroupPanel = false;
             // 
-            // colDes_ID11
+            // layoutControlItem18
             // 
-            this.colDes_ID11.FieldName = "Des_ID";
-            this.colDes_ID11.Name = "colDes_ID11";
-            this.colDes_ID11.Visible = true;
-            this.colDes_ID11.VisibleIndex = 0;
-            this.colDes_ID11.Width = 100;
+            this.layoutControlItem18.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem18.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem18.Control = this.cbxType2;
+            this.layoutControlItem18.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.layoutControlItem18.CustomizationFormText = "Type Depense";
+            this.layoutControlItem18.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem18.Name = "layoutControlItem18";
+            this.layoutControlItem18.Size = new System.Drawing.Size(600, 44);
+            this.layoutControlItem18.Text = "Referance Produits";
+            this.layoutControlItem18.TextSize = new System.Drawing.Size(108, 13);
             // 
-            // colName11
+            // simpleButton3
             // 
-            this.colName11.Caption = "Type Depense";
-            this.colName11.FieldName = "Name";
-            this.colName11.Name = "colName11";
-            this.colName11.Visible = true;
-            this.colName11.VisibleIndex = 1;
-            this.colName11.Width = 892;
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton3.Location = new System.Drawing.Point(632, 53);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(58, 38);
+            this.simpleButton3.StyleController = this.layoutControl1;
+            this.simpleButton3.TabIndex = 20;
             // 
-            // layoutControlItem6
+            // layoutControlItem19
             // 
-            this.layoutControlItem6.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
-            this.layoutControlItem6.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem6.Control = this.cbxType1;
-            this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.layoutControlItem6.CustomizationFormText = "Type Depense";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 44);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(664, 40);
-            this.layoutControlItem6.Text = "Type Depense";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(87, 13);
+            this.layoutControlItem19.Control = this.simpleButton3;
+            this.layoutControlItem19.Location = new System.Drawing.Point(600, 0);
+            this.layoutControlItem19.Name = "layoutControlItem19";
+            this.layoutControlItem19.Size = new System.Drawing.Size(64, 44);
+            this.layoutControlItem19.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem19.TextVisible = false;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(156, 141);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Size = new System.Drawing.Size(534, 34);
+            this.textEdit1.StyleController = this.layoutControl1;
+            this.textEdit1.TabIndex = 21;
+            // 
+            // layoutControlItem20
+            // 
+            this.layoutControlItem20.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.layoutControlItem20.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem20.Control = this.textEdit1;
+            this.layoutControlItem20.Location = new System.Drawing.Point(0, 88);
+            this.layoutControlItem20.Name = "layoutControlItem20";
+            this.layoutControlItem20.Size = new System.Drawing.Size(664, 40);
+            this.layoutControlItem20.Text = "Nom Produit";
+            this.layoutControlItem20.TextSize = new System.Drawing.Size(108, 16);
+            // 
+            // colDes_ID1
+            // 
+            this.colDes_ID1.FieldName = "Des_ID";
+            this.colDes_ID1.Name = "colDes_ID1";
+            this.colDes_ID1.Visible = true;
+            this.colDes_ID1.VisibleIndex = 0;
+            this.colDes_ID1.Width = 100;
+            // 
+            // colName1
+            // 
+            this.colName1.Caption = "Type Depense";
+            this.colName1.FieldName = "Name";
+            this.colName1.Name = "colName1";
+            this.colName1.Visible = true;
+            this.colName1.VisibleIndex = 1;
+            this.colName1.Width = 892;
+            // 
+            // colDes_ID12
+            // 
+            this.colDes_ID12.FieldName = "Des_ID";
+            this.colDes_ID12.Name = "colDes_ID12";
+            this.colDes_ID12.Visible = true;
+            this.colDes_ID12.VisibleIndex = 0;
+            this.colDes_ID12.Width = 100;
+            // 
+            // colName12
+            // 
+            this.colName12.Caption = "Type Depense";
+            this.colName12.FieldName = "Name";
+            this.colName12.Name = "colName12";
+            this.colName12.Visible = true;
+            this.colName12.VisibleIndex = 1;
+            this.colName12.Width = 892;
+            // 
+            // colDes_ID111
+            // 
+            this.colDes_ID111.FieldName = "Des_ID";
+            this.colDes_ID111.Name = "colDes_ID111";
+            this.colDes_ID111.Visible = true;
+            this.colDes_ID111.VisibleIndex = 0;
+            this.colDes_ID111.Width = 100;
+            // 
+            // colName111
+            // 
+            this.colName111.Caption = "Type Depense";
+            this.colName111.FieldName = "Name";
+            this.colName111.Name = "colName111";
+            this.colName111.Visible = true;
+            this.colName111.VisibleIndex = 1;
+            this.colName111.Width = 892;
             // 
             // Form_Product
             // 
@@ -794,10 +853,12 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxType1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxType2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem20)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -843,15 +904,20 @@ namespace inventory_management
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;
-        private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraEditors.SearchLookUpEdit cbxType1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView11;
-        private DevExpress.XtraGrid.Columns.GridColumn colDes_ID11;
-        private DevExpress.XtraGrid.Columns.GridColumn colName11;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SearchLookUpEdit cbxType2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView12;
+        private DevExpress.XtraGrid.Columns.GridColumn colDes_ID12;
+        private DevExpress.XtraGrid.Columns.GridColumn colName12;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem18;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem19;
+        private DevExpress.XtraGrid.Columns.GridColumn colDes_ID111;
+        private DevExpress.XtraGrid.Columns.GridColumn colName111;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem20;
     }
 }
