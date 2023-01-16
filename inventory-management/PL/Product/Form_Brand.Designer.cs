@@ -43,6 +43,8 @@ namespace inventory_management.PL.Product
             this.gridList = new DevExpress.XtraGrid.GridControl();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colBrand_ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -55,8 +57,6 @@ namespace inventory_management.PL.Product
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
-            this.colBrand_ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
@@ -146,6 +146,22 @@ namespace inventory_management.PL.Product
             this.gridView1.GridControl = this.gridList;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // colBrand_ID
+            // 
+            this.colBrand_ID.Caption = "Marque ID";
+            this.colBrand_ID.FieldName = "Brand_ID";
+            this.colBrand_ID.Name = "colBrand_ID";
+            this.colBrand_ID.Visible = true;
+            this.colBrand_ID.VisibleIndex = 0;
+            // 
+            // colName
+            // 
+            this.colName.Caption = "Marque";
+            this.colName.FieldName = "Name";
+            this.colName.Name = "colName";
+            this.colName.Visible = true;
+            this.colName.VisibleIndex = 1;
             // 
             // txtName
             // 
@@ -281,8 +297,11 @@ namespace inventory_management.PL.Product
             this.simpleLabelItem1.AppearanceItemCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.simpleLabelItem1.AutoSizeMode = DevExpress.XtraLayout.SimpleLabelAutoSizeMode.None;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
+            this.simpleLabelItem1.MaxSize = new System.Drawing.Size(432, 53);
+            this.simpleLabelItem1.MinSize = new System.Drawing.Size(432, 53);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(432, 53);
+            this.simpleLabelItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.simpleLabelItem1.Text = "Ajouter Marque";
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(158, 24);
             // 
@@ -293,22 +312,6 @@ namespace inventory_management.PL.Product
             this.emptySpaceItem3.Name = "emptySpaceItem3";
             this.emptySpaceItem3.Size = new System.Drawing.Size(432, 22);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
-            // 
-            // colBrand_ID
-            // 
-            this.colBrand_ID.Caption = "Marque ID";
-            this.colBrand_ID.FieldName = "Brand_ID";
-            this.colBrand_ID.Name = "colBrand_ID";
-            this.colBrand_ID.Visible = true;
-            this.colBrand_ID.VisibleIndex = 0;
-            // 
-            // colName
-            // 
-            this.colName.Caption = "Marque";
-            this.colName.FieldName = "Name";
-            this.colName.Name = "colName";
-            this.colName.Visible = true;
-            this.colName.VisibleIndex = 1;
             // 
             // Form_Brand
             // 

@@ -35,7 +35,14 @@ namespace inventory_management.PL.Product
             {
                 brand.add_Brand(txtName.Text);
                 sqlDataSource1.FillAsync();
-                SoundPlayer simpleSound = new SoundPlayer(@"c:\sound.wav");
+                txtName.Clear();
+                txtName.Select();
+                SoundPlayer simpleSound = new SoundPlayer(@"c:\Added.wav");
+                simpleSound.Play();
+            }
+            else
+            {
+                SoundPlayer simpleSound = new SoundPlayer(@"c:\ValidationError.wav");
                 simpleSound.Play();
             }
         }

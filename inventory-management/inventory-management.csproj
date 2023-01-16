@@ -185,6 +185,9 @@
     <EmbeddedResource Include="PL\Product\Form_Brand.resx">
       <DependentUpon>Form_Brand.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\Product\Form_Category.resx">
+      <DependentUpon>Form_Category.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
