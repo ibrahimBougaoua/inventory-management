@@ -32,12 +32,12 @@ namespace inventory_management
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_DeservedType));
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
@@ -136,11 +136,11 @@ namespace inventory_management
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(576, 61);
+            this.txtName.Location = new System.Drawing.Point(519, 61);
             this.txtName.Name = "txtName";
             this.txtName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtName.Properties.Appearance.Options.UseFont = true;
-            this.txtName.Size = new System.Drawing.Size(256, 34);
+            this.txtName.Size = new System.Drawing.Size(313, 34);
             this.txtName.StyleController = this.layoutControl1;
             this.txtName.TabIndex = 2;
             conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
@@ -151,11 +151,11 @@ namespace inventory_management
             // txtID
             // 
             this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(174, 61);
+            this.txtID.Location = new System.Drawing.Point(117, 61);
             this.txtID.Name = "txtID";
             this.txtID.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtID.Properties.Appearance.Options.UseFont = true;
-            this.txtID.Size = new System.Drawing.Size(254, 34);
+            this.txtID.Size = new System.Drawing.Size(311, 34);
             this.txtID.StyleController = this.layoutControl1;
             this.txtID.TabIndex = 3;
             // 
@@ -282,7 +282,7 @@ namespace inventory_management
             // 
             // DeservedLockup
             // 
-            this.DeservedLockup.Location = new System.Drawing.Point(174, 316);
+            this.DeservedLockup.Location = new System.Drawing.Point(117, 316);
             this.DeservedLockup.Name = "DeservedLockup";
             this.DeservedLockup.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.DeservedLockup.Properties.Appearance.Options.UseFont = true;
@@ -291,7 +291,7 @@ namespace inventory_management
             this.DeservedLockup.Properties.DataSource = this.deserved_TypeBindingSource;
             this.DeservedLockup.Properties.NullText = "";
             this.DeservedLockup.Properties.PopupView = this.searchLookUpEdit1View;
-            this.DeservedLockup.Size = new System.Drawing.Size(658, 34);
+            this.DeservedLockup.Size = new System.Drawing.Size(715, 34);
             this.DeservedLockup.StyleController = this.layoutControl1;
             this.DeservedLockup.TabIndex = 17;
             // 
@@ -349,7 +349,7 @@ namespace inventory_management
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(402, 40);
             this.layoutControlItem3.Text = "ID Type";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(126, 13);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(69, 13);
             // 
             // layoutControlItem2
             // 
@@ -360,7 +360,7 @@ namespace inventory_management
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(404, 40);
             this.layoutControlItem2.Text = "Libile Type";
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(126, 13);
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(69, 13);
             // 
             // tabbedControlGroup2
             // 
@@ -514,7 +514,8 @@ namespace inventory_management
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 10);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(806, 40);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(126, 16);
+            this.layoutControlItem1.Text = "Recherche";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(69, 16);
             // 
             // emptySpaceItem1
             // 
@@ -536,20 +537,20 @@ namespace inventory_management
             // 
             this.sqlDataSource1.ConnectionName = "Sales_System";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression3.ColumnName = "Des_ID";
-            table2.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"103\" />";
-            table2.Name = "Deserved_Type";
-            columnExpression3.Table = table2;
-            column3.Expression = columnExpression3;
-            columnExpression4.ColumnName = "Name";
-            columnExpression4.Table = table2;
-            column4.Expression = columnExpression4;
-            selectQuery2.Columns.Add(column3);
-            selectQuery2.Columns.Add(column4);
-            selectQuery2.Name = "Deserved_Type";
-            selectQuery2.Tables.Add(table2);
+            columnExpression1.ColumnName = "Des_ID";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"103\" />";
+            table1.Name = "Deserved_Type";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Name = "Deserved_Type";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery2});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkRlc2VydmVkX1R5cGUiPjxGa" +
     "WVsZCBOYW1lPSJEZXNfSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJOYW1lIiBUeXBlPSJTd" +
     "HJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=";
