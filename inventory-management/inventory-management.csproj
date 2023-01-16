@@ -70,7 +70,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\Brand\Brand.cs" />
+    <Compile Include="BL\Category\Category.cs" />
     <Compile Include="BL\Deserved.cs" />
+    <Compile Include="BL\Family\Family.cs" />
+    <Compile Include="BL\Product\Product.cs" />
+    <Compile Include="BL\Stock\Stock.cs" />
+    <Compile Include="BL\Task\Task.cs" />
+    <Compile Include="BL\Unit\Unit.cs" />
     <Compile Include="CustomerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +115,42 @@
     <Compile Include="PL\Form_Product.Designer.cs">
       <DependentUpon>Form_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Product\Form_Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Brand.Designer.cs">
+      <DependentUpon>Form_Brand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Product\Form_Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Category.Designer.cs">
+      <DependentUpon>Form_Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Product\Form_Family.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Family.Designer.cs">
+      <DependentUpon>Form_Family.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Product\Form_Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Stock.Designer.cs">
+      <DependentUpon>Form_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Product\Form_Task.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Task.Designer.cs">
+      <DependentUpon>Form_Task.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Product\Form_Unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Unit.Designer.cs">
+      <DependentUpon>Form_Unit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PL\Form_Suppliers.cs">
@@ -138,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Form_Suppliers.resx">
       <DependentUpon>Form_Suppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Product\Form_Brand.resx">
+      <DependentUpon>Form_Brand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
