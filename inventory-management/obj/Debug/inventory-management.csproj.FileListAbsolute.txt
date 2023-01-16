@@ -105,3 +105,4 @@ C:\Ezzipos\inventory-management\inventory-management\obj\Debug\inventory-managem
 C:\Ezzipos\inventory-management\inventory-management\obj\Debug\inventory_management.Frm_DeservedType.resources
 C:\Ezzipos\inventory-management\inventory-management\obj\Debug\inventory_management.Frm_Deserved.resources
 C:\Ezzipos\inventory-management\inventory-management\obj\Debug\inventory_management.Form_Product.resources
+C:\Ezzipos\inventory-management\inventory-management\obj\Debug\inventory_management.Form_cust.resources
