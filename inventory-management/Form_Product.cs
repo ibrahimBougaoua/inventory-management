@@ -17,5 +17,10 @@ namespace inventory_management
         {
             InitializeComponent();
         }
+
+        private void checkEdit1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
