@@ -76,7 +76,7 @@
     <Compile Include="BL\Family\Family.cs" />
     <Compile Include="BL\Product\Product.cs" />
     <Compile Include="BL\Stock\Stock.cs" />
-    <Compile Include="BL\Task\Task.cs" />
+    <Compile Include="BL\Tax\Tax.cs" />
     <Compile Include="BL\Unit\Unit.cs" />
     <Compile Include="CustomerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -190,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Product\Form_Family.resx">
       <DependentUpon>Form_Family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Product\Form_Unit.resx">
+      <DependentUpon>Form_Unit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -41,5 +41,13 @@ namespace inventory_management.PL.Product
                 simpleSound.Play();
             }
         }
+
+        private void txtName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                this.simpleButton1_Click(sender, e);
+            }
+        }
     }
 }

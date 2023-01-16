@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace inventory_management.BL.Task
+namespace inventory_management.BL.Tax
 {
     class Task
     {
-        public void add_Task(string Name)
+        public void add_Tax(string Name)
         {
             DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
             dal.Open();
@@ -19,7 +19,7 @@ namespace inventory_management.BL.Task
             param[0] = new SqlParameter("@Name", SqlDbType.NVarChar, 50);
             param[0].Value = Name;
 
-            dal.excuteCommand("ADD_TASK", param);
+            dal.excuteCommand("ADD_TAX", param);
             dal.Close();
 
         }
