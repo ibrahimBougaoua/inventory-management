@@ -30,11 +30,6 @@ namespace inventory_management
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Product));
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -45,6 +40,11 @@ namespace inventory_management
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnAddNew = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
@@ -290,7 +290,7 @@ namespace inventory_management
             // 
             this.btnAddNew.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.Appearance.Options.UseFont = true;
-            this.btnAddNew.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.btnAddNew.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNew.ImageOptions.Image")));
             this.btnAddNew.Location = new System.Drawing.Point(208, 767);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(202, 38);
@@ -344,7 +344,7 @@ namespace inventory_management
             // 
             // btnAddCateg
             // 
-            this.btnAddCateg.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.btnAddCateg.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCateg.ImageOptions.Image")));
             this.btnAddCateg.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btnAddCateg.ImageOptions.SvgImageSize = new System.Drawing.Size(5, 5);
             this.btnAddCateg.Location = new System.Drawing.Point(1117, 147);
@@ -398,7 +398,7 @@ namespace inventory_management
             // 
             // btnAddUnit
             // 
-            this.btnAddUnit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.btnAddUnit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddUnit.ImageOptions.Image")));
             this.btnAddUnit.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btnAddUnit.ImageOptions.SvgImageSize = new System.Drawing.Size(5, 5);
             this.btnAddUnit.Location = new System.Drawing.Point(1117, 191);
@@ -409,7 +409,7 @@ namespace inventory_management
             // 
             // generateRefProd
             // 
-            this.generateRefProd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.generateRefProd.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("generateRefProd.ImageOptions.Image")));
             this.generateRefProd.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.generateRefProd.Location = new System.Drawing.Point(623, 92);
             this.generateRefProd.Name = "generateRefProd";
@@ -420,7 +420,7 @@ namespace inventory_management
             // btnGenerateBarcode
             // 
             this.btnGenerateBarcode.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnGenerateBarcode.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnGenerateBarcode.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnGenerateBarcode.ImageOptions.SvgImage")));
             this.btnGenerateBarcode.Location = new System.Drawing.Point(577, 136);
             this.btnGenerateBarcode.Name = "btnGenerateBarcode";
             this.btnGenerateBarcode.Size = new System.Drawing.Size(40, 38);
@@ -573,7 +573,7 @@ namespace inventory_management
             // 
             // btnListbarC
             // 
-            this.btnListbarC.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnListbarC.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnListbarC.ImageOptions.Image")));
             this.btnListbarC.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btnListbarC.Location = new System.Drawing.Point(623, 136);
             this.btnListbarC.Name = "btnListbarC";
@@ -647,18 +647,28 @@ namespace inventory_management
             // 
             this.txtFamille.Location = new System.Drawing.Point(837, 103);
             this.txtFamille.Name = "txtFamille";
+            this.txtFamille.Properties.AllowFocused = false;
             this.txtFamille.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.txtFamille.Properties.Appearance.Options.UseFont = true;
+            this.txtFamille.Properties.AppearanceDropDown.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.txtFamille.Properties.AppearanceDropDown.Options.UseFont = true;
+            this.txtFamille.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtFamille.Properties.AppearanceFocused.Options.UseFont = true;
             this.txtFamille.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtFamille.Properties.NullText = "";
             this.txtFamille.Properties.PopupView = this.gridView2;
+            this.txtFamille.Properties.UseAdvancedMode = DevExpress.Utils.DefaultBoolean.True;
             this.txtFamille.Size = new System.Drawing.Size(274, 34);
             this.txtFamille.StyleController = this.layoutControl1;
             this.txtFamille.TabIndex = 3;
             // 
             // gridView2
             // 
+            this.gridView2.Appearance.FilterPanel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.gridView2.Appearance.FilterPanel.Options.UseFont = true;
+            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.gridView2.Appearance.HeaderPanel.Options.UseFont = true;
             this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -737,9 +747,9 @@ namespace inventory_management
             this.txtPrixAchat.Properties.Appearance.Options.UseFont = true;
             this.txtPrixAchat.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtPrixAchat.Properties.AppearanceFocused.Options.UseBackColor = true;
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.txtPrixAchat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtPrixAchat.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtPrixAchat.Size = new System.Drawing.Size(264, 34);
             this.txtPrixAchat.StyleController = this.layoutControl1;
@@ -858,7 +868,7 @@ namespace inventory_management
             // 
             // btnAddFamille
             // 
-            this.btnAddFamille.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton51.ImageOptions.Image")));
+            this.btnAddFamille.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddFamille.ImageOptions.Image")));
             this.btnAddFamille.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.btnAddFamille.ImageOptions.SvgImageSize = new System.Drawing.Size(5, 5);
             this.btnAddFamille.Location = new System.Drawing.Point(1117, 103);
@@ -899,9 +909,9 @@ namespace inventory_management
             this.txtQteInit.Properties.Appearance.Options.UseFont = true;
             this.txtQteInit.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtQteInit.Properties.AppearanceFocused.Options.UseBackColor = true;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.txtQteInit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtQteInit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtQteInit.Size = new System.Drawing.Size(219, 34);
             this.txtQteInit.StyleController = this.layoutControl1;
@@ -936,9 +946,9 @@ namespace inventory_management
             this.txtQteAlert.Properties.Appearance.Options.UseFont = true;
             this.txtQteAlert.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtQteAlert.Properties.AppearanceFocused.Options.UseBackColor = true;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.txtQteAlert.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtQteAlert.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtQteAlert.Size = new System.Drawing.Size(124, 34);
             this.txtQteAlert.StyleController = this.layoutControl1;
