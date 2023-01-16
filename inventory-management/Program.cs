@@ -17,7 +17,7 @@ namespace inventory_management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PL.Product.Form_Unit());
+            Application.Run(new PL.Product.Form_Tax());
         }
     }
 }
