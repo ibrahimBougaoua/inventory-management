@@ -71,5 +71,35 @@ namespace inventory_management
                 simpleSound.Play();
             }
         }
+
+        private void btnAddFamille_Click(object sender, EventArgs e)
+        {
+            PL.Product.Form_Family family = new PL.Product.Form_Family();
+            family.ShowDialog();
+        }
+
+        private void btnAddUnit_Click_1(object sender, EventArgs e)
+        {
+            PL.Product.Form_Unit unit = new PL.Product.Form_Unit();
+            unit.ShowDialog();
+        }
+
+        private void btnAddCateg_Click(object sender, EventArgs e)
+        {
+            PL.Product.Form_Category cate = new PL.Product.Form_Category();
+            cate.ShowDialog();
+        }
+
+        private void btnAddBrand_Click(object sender, EventArgs e)
+        {
+            PL.Product.Form_Brand brand = new PL.Product.Form_Brand();
+            brand.ShowDialog();
+        }
+
+        private void btnADDtax_Click(object sender, EventArgs e)
+        {
+            PL.Product.Form_Tax tax = new PL.Product.Form_Tax();
+            tax.ShowDialog();
+        }
     }
 }
