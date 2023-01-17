@@ -28,8 +28,17 @@ namespace inventory_management
 
         private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form_Customer frm = new Form_Customer();
-            frm.ShowDialog();
+            Form formToOpen = isActive(typeof(PL.Client.Form_Client));
+            if (formToOpen == null) // if form is not open create it
+            {
+                PL.Client.Form_Client client = new PL.Client.Form_Client();
+                client.MdiParent = this;
+                client.Show();
+            }
+            else  // else it's open so open it
+            {
+                formToOpen.Activate();
+            }
         }
 
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -50,7 +59,6 @@ namespace inventory_management
                 {
                     return f;
                 }
-
             }
             return null;
         }
@@ -63,7 +71,6 @@ namespace inventory_management
                 PL.Purchase.Form_Purchase purchase = new PL.Purchase.Form_Purchase();
                 purchase.MdiParent = this;
                 purchase.Show();
-
             }
             else  // else it's open so open it
             {

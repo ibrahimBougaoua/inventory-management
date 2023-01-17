@@ -86,6 +86,12 @@
     </Compile>
     <Compile Include="DAL\DataAccessLayer.cs" />
     <Compile Include="Database.cs" />
+    <Compile Include="PL\Client\Form_Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Client\Form_Client.Designer.cs">
+      <DependentUpon>Form_Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Form_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SupplierDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PL\Client\Form_Client.resx">
+      <DependentUpon>Form_Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </EmbeddedResource>
