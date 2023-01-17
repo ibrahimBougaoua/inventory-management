@@ -30,12 +30,19 @@ namespace inventory_management
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule3 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Suppliers));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.searchLookUpClient = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.supplierDataSet = new inventory_management.SupplierDataSet();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colSupp_ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupp_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupp_Phone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSupp_Address = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
             this.txtNotes = new DevExpress.XtraEditors.TextEdit();
             this.txtName = new DevExpress.XtraEditors.TextEdit();
             this.txtID = new DevExpress.XtraEditors.TextEdit();
@@ -77,17 +84,12 @@ namespace inventory_management
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
-            this.supplierDataSet = new inventory_management.SupplierDataSet();
-            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.suppliersTableAdapter = new inventory_management.SupplierDataSetTableAdapters.SuppliersTableAdapter();
-            this.colSupp_ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSupp_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSupp_Phone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSupp_Address = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colNotes = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).BeginInit();
@@ -120,8 +122,6 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -167,6 +167,16 @@ namespace inventory_management
             this.searchLookUpClient.TabIndex = 18;
             this.searchLookUpClient.EditValueChanged += new System.EventHandler(this.searchLookUpClient_EditValueChanged);
             // 
+            // suppliersBindingSource
+            // 
+            this.suppliersBindingSource.DataMember = "Suppliers";
+            this.suppliersBindingSource.DataSource = this.supplierDataSet;
+            // 
+            // supplierDataSet
+            // 
+            this.supplierDataSet.DataSetName = "SupplierDataSet";
+            this.supplierDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // searchLookUpEdit1View
             // 
             this.searchLookUpEdit1View.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
@@ -185,6 +195,47 @@ namespace inventory_management
             this.searchLookUpEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.searchLookUpEdit1View.OptionsView.ShowGroupPanel = false;
             // 
+            // colSupp_ID
+            // 
+            this.colSupp_ID.AppearanceCell.Options.UseTextOptions = true;
+            this.colSupp_ID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.colSupp_ID.Caption = "ID Fournisseur";
+            this.colSupp_ID.FieldName = "Supp_ID";
+            this.colSupp_ID.Name = "colSupp_ID";
+            this.colSupp_ID.Visible = true;
+            this.colSupp_ID.VisibleIndex = 0;
+            // 
+            // colSupp_Name
+            // 
+            this.colSupp_Name.Caption = "Nom Fournisseur";
+            this.colSupp_Name.FieldName = "Supp_Name";
+            this.colSupp_Name.Name = "colSupp_Name";
+            this.colSupp_Name.Visible = true;
+            this.colSupp_Name.VisibleIndex = 1;
+            // 
+            // colSupp_Phone
+            // 
+            this.colSupp_Phone.Caption = "Tel Fournisseur";
+            this.colSupp_Phone.FieldName = "Supp_Phone";
+            this.colSupp_Phone.Name = "colSupp_Phone";
+            this.colSupp_Phone.Visible = true;
+            this.colSupp_Phone.VisibleIndex = 2;
+            // 
+            // colSupp_Address
+            // 
+            this.colSupp_Address.Caption = "Adresse Fournisseur";
+            this.colSupp_Address.FieldName = "Supp_Address";
+            this.colSupp_Address.Name = "colSupp_Address";
+            this.colSupp_Address.Visible = true;
+            this.colSupp_Address.VisibleIndex = 3;
+            // 
+            // colNotes
+            // 
+            this.colNotes.FieldName = "Notes";
+            this.colNotes.Name = "colNotes";
+            this.colNotes.Visible = true;
+            this.colNotes.VisibleIndex = 4;
+            // 
             // txtNotes
             // 
             this.txtNotes.Location = new System.Drawing.Point(515, 129);
@@ -200,10 +251,10 @@ namespace inventory_management
             this.txtName.Size = new System.Drawing.Size(259, 28);
             this.txtName.StyleController = this.layoutControl1;
             this.txtName.TabIndex = 2;
-            conditionValidationRule3.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule3.ErrorText = "Le nom est vide";
-            conditionValidationRule3.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Information;
-            this.dxValidationProvider1.SetValidationRule(this.txtName, conditionValidationRule3);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "Le nom est vide";
+            conditionValidationRule1.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Information;
+            this.dxValidationProvider1.SetValidationRule(this.txtName, conditionValidationRule1);
             // 
             // txtID
             // 
@@ -221,10 +272,10 @@ namespace inventory_management
             this.txtPhone.Size = new System.Drawing.Size(257, 28);
             this.txtPhone.StyleController = this.layoutControl1;
             this.txtPhone.TabIndex = 4;
-            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule1.ErrorText = "Numéro de téléphone est vide";
-            conditionValidationRule1.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Information;
-            this.dxValidationProvider1.SetValidationRule(this.txtPhone, conditionValidationRule1);
+            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule2.ErrorText = "Numéro de téléphone est vide";
+            conditionValidationRule2.ErrorType = DevExpress.XtraEditors.DXErrorProvider.ErrorType.Information;
+            this.dxValidationProvider1.SetValidationRule(this.txtPhone, conditionValidationRule2);
             this.txtPhone.EditValueChanged += new System.EventHandler(this.txtPhone_EditValueChanged);
             // 
             // memoAdress
@@ -403,7 +454,7 @@ namespace inventory_management
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Size = new System.Drawing.Size(748, 102);
-            this.layoutControlGroup1.Text = "Donnée client";
+            this.layoutControlGroup1.Text = "Gestion des fournisseurs";
             this.layoutControlGroup1.TextLocation = DevExpress.Utils.Locations.Right;
             // 
             // layoutControlItem4
@@ -634,60 +685,9 @@ namespace inventory_management
             this.emptySpaceItem3.Size = new System.Drawing.Size(780, 12);
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // supplierDataSet
-            // 
-            this.supplierDataSet.DataSetName = "SupplierDataSet";
-            this.supplierDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // suppliersBindingSource
-            // 
-            this.suppliersBindingSource.DataMember = "Suppliers";
-            this.suppliersBindingSource.DataSource = this.supplierDataSet;
-            // 
             // suppliersTableAdapter
             // 
             this.suppliersTableAdapter.ClearBeforeFill = true;
-            // 
-            // colSupp_ID
-            // 
-            this.colSupp_ID.AppearanceCell.Options.UseTextOptions = true;
-            this.colSupp_ID.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.colSupp_ID.Caption = "ID Fournisseur";
-            this.colSupp_ID.FieldName = "Supp_ID";
-            this.colSupp_ID.Name = "colSupp_ID";
-            this.colSupp_ID.Visible = true;
-            this.colSupp_ID.VisibleIndex = 0;
-            // 
-            // colSupp_Name
-            // 
-            this.colSupp_Name.Caption = "Nom Fournisseur";
-            this.colSupp_Name.FieldName = "Supp_Name";
-            this.colSupp_Name.Name = "colSupp_Name";
-            this.colSupp_Name.Visible = true;
-            this.colSupp_Name.VisibleIndex = 1;
-            // 
-            // colSupp_Phone
-            // 
-            this.colSupp_Phone.Caption = "Tel Fournisseur";
-            this.colSupp_Phone.FieldName = "Supp_Phone";
-            this.colSupp_Phone.Name = "colSupp_Phone";
-            this.colSupp_Phone.Visible = true;
-            this.colSupp_Phone.VisibleIndex = 2;
-            // 
-            // colSupp_Address
-            // 
-            this.colSupp_Address.Caption = "Adresse Fournisseur";
-            this.colSupp_Address.FieldName = "Supp_Address";
-            this.colSupp_Address.Name = "colSupp_Address";
-            this.colSupp_Address.Visible = true;
-            this.colSupp_Address.VisibleIndex = 3;
-            // 
-            // colNotes
-            // 
-            this.colNotes.FieldName = "Notes";
-            this.colNotes.Name = "colNotes";
-            this.colNotes.Visible = true;
-            this.colNotes.VisibleIndex = 4;
             // 
             // Form_Suppliers
             // 
@@ -707,6 +707,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpClient.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNotes.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtName.Properties)).EndInit();
@@ -739,8 +741,6 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dxValidationProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.supplierDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -135,5 +135,29 @@ namespace inventory_management.BL.Product
             dal.excuteCommand("ADD_PRODUCT_BARCODE", param);
             dal.Close();
         }
+
+        public void add_Product_to_warehouse(
+            int Qty,
+            int Et_ID,
+            int Pro_ID
+            )
+        {
+            DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
+            dal.Open();
+            SqlParameter[] param = new SqlParameter[3];
+
+            param[0] = new SqlParameter("@Qty", SqlDbType.Int);
+            param[0].Value = Qty;
+
+            param[1] = new SqlParameter("@Et_ID", SqlDbType.Int);
+            param[1].Value = Et_ID;
+
+            param[2] = new SqlParameter("@Pro_ID", SqlDbType.Int);
+            param[2].Value = Pro_ID;
+
+            dal.excuteCommand("ADD_PRODUCT_TO_WAREHOUSE", param);
+            dal.Close();
+        }
+
     }
 }
