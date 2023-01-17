@@ -112,3 +112,4 @@ C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\invent
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Family.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Unit.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Tax.resources
+C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Warehouse.resources
