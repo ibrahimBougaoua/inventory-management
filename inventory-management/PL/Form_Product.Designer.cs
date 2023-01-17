@@ -31,34 +31,29 @@ namespace inventory_management
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Product));
-            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule2 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery9 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column24 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression24 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table9 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column25 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression25 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery10 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column26 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression26 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table10 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column27 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression27 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column28 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression28 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery11 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column29 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression29 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table11 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column30 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression30 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column31 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression31 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions4 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject13 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject14 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject15 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject16 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule conditionValidationRule1 = new DevExpress.XtraEditors.DXErrorProvider.ConditionValidationRule();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery3 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table3 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column7 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression7 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column8 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression8 = new DevExpress.DataAccess.Sql.ColumnExpression();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -69,46 +64,51 @@ namespace inventory_management
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery12 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column32 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression32 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table12 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column33 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression33 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column34 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression34 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery13 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column35 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression35 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table13 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column36 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression36 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column37 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression37 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column38 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression38 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column39 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression39 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery14 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column40 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression40 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table14 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column41 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression41 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column42 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression42 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery15 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column43 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression43 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table15 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column44 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression44 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery16 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column45 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression45 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table16 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column46 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression46 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery4 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column9 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression9 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table4 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column10 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression10 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column11 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression11 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery5 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column12 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression12 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table5 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column13 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression13 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column14 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression14 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column15 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression15 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column16 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression16 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery6 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column17 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression17 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table6 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column18 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression18 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column19 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression19 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery7 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column20 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression20 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table7 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column21 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression21 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery8 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column22 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression22 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table8 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column23 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression23 = new DevExpress.DataAccess.Sql.ColumnExpression();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.btnAddBrand = new DevExpress.XtraEditors.SimpleButton();
             this.btnADDtax = new DevExpress.XtraEditors.SimpleButton();
@@ -187,8 +187,8 @@ namespace inventory_management
             this.sqlDataSource4 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView311 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.cbxCoulissant = new DevExpress.XtraEditors.SpinEdit();
-            this.txtRefProd = new DevExpress.XtraEditors.TextEdit();
-            this.txtCodeBar = new DevExpress.XtraEditors.TextEdit();
+            this.txtRefProd = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtCodeBar = new DevExpress.XtraEditors.LookUpEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -690,9 +690,9 @@ namespace inventory_management
             this.txtNomProd.Size = new System.Drawing.Size(487, 34);
             this.txtNomProd.StyleController = this.layoutControl1;
             this.txtNomProd.TabIndex = 14;
-            conditionValidationRule2.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
-            conditionValidationRule2.ErrorText = "La valeur est vide";
-            this.dxValidationProvider1.SetValidationRule(this.txtNomProd, conditionValidationRule2);
+            conditionValidationRule1.ConditionOperator = DevExpress.XtraEditors.DXErrorProvider.ConditionOperator.IsNotBlank;
+            conditionValidationRule1.ErrorText = "La valeur est vide";
+            this.dxValidationProvider1.SetValidationRule(this.txtNomProd, conditionValidationRule1);
             // 
             // txtFamille
             // 
@@ -726,20 +726,20 @@ namespace inventory_management
             // 
             this.sqlDataSource1.ConnectionName = "Sales_System";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression24.ColumnName = "Fm_ID";
-            table9.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table9.Name = "Product_Family";
-            columnExpression24.Table = table9;
-            column24.Expression = columnExpression24;
-            columnExpression25.ColumnName = "Name";
-            columnExpression25.Table = table9;
-            column25.Expression = columnExpression25;
-            selectQuery9.Columns.Add(column24);
-            selectQuery9.Columns.Add(column25);
-            selectQuery9.Name = "Product_Family";
-            selectQuery9.Tables.Add(table9);
+            columnExpression1.ColumnName = "Fm_ID";
+            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table1.Name = "Product_Family";
+            columnExpression1.Table = table1;
+            column1.Expression = columnExpression1;
+            columnExpression2.ColumnName = "Name";
+            columnExpression2.Table = table1;
+            column2.Expression = columnExpression2;
+            selectQuery1.Columns.Add(column1);
+            selectQuery1.Columns.Add(column2);
+            selectQuery1.Name = "Product_Family";
+            selectQuery1.Tables.Add(table1);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery9});
+            selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlByb2R1Y3RfRmFtaWx5Ij48R" +
     "mllbGQgTmFtZT0iRm1fSUQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJOYW1lIiBUeXBlPSJTd" +
     "HJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD4=";
@@ -789,24 +789,24 @@ namespace inventory_management
             // 
             this.sqlDataSource2.ConnectionName = "Sales_System";
             this.sqlDataSource2.Name = "sqlDataSource2";
-            columnExpression26.ColumnName = "Cate_ID";
-            table10.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table10.Name = "Product_Category";
-            columnExpression26.Table = table10;
-            column26.Expression = columnExpression26;
-            columnExpression27.ColumnName = "Name";
-            columnExpression27.Table = table10;
-            column27.Expression = columnExpression27;
-            columnExpression28.ColumnName = "Tax";
-            columnExpression28.Table = table10;
-            column28.Expression = columnExpression28;
-            selectQuery10.Columns.Add(column26);
-            selectQuery10.Columns.Add(column27);
-            selectQuery10.Columns.Add(column28);
-            selectQuery10.Name = "Product_Category";
-            selectQuery10.Tables.Add(table10);
+            columnExpression3.ColumnName = "Cate_ID";
+            table2.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table2.Name = "Product_Category";
+            columnExpression3.Table = table2;
+            column3.Expression = columnExpression3;
+            columnExpression4.ColumnName = "Name";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "Tax";
+            columnExpression5.Table = table2;
+            column5.Expression = columnExpression5;
+            selectQuery2.Columns.Add(column3);
+            selectQuery2.Columns.Add(column4);
+            selectQuery2.Columns.Add(column5);
+            selectQuery2.Name = "Product_Category";
+            selectQuery2.Tables.Add(table2);
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery10});
+            selectQuery2});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
             // 
             // gridView3
@@ -850,24 +850,24 @@ namespace inventory_management
             // 
             this.sqlDataSource3.ConnectionName = "Sales_System";
             this.sqlDataSource3.Name = "sqlDataSource3";
-            columnExpression29.ColumnName = "Ut_ID";
-            table11.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table11.Name = "Product_Unite";
-            columnExpression29.Table = table11;
-            column29.Expression = columnExpression29;
-            columnExpression30.ColumnName = "Code";
-            columnExpression30.Table = table11;
-            column30.Expression = columnExpression30;
-            columnExpression31.ColumnName = "Unite";
-            columnExpression31.Table = table11;
-            column31.Expression = columnExpression31;
-            selectQuery11.Columns.Add(column29);
-            selectQuery11.Columns.Add(column30);
-            selectQuery11.Columns.Add(column31);
-            selectQuery11.Name = "Product_Unite";
-            selectQuery11.Tables.Add(table11);
+            columnExpression6.ColumnName = "Ut_ID";
+            table3.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table3.Name = "Product_Unite";
+            columnExpression6.Table = table3;
+            column6.Expression = columnExpression6;
+            columnExpression7.ColumnName = "Code";
+            columnExpression7.Table = table3;
+            column7.Expression = columnExpression7;
+            columnExpression8.ColumnName = "Unite";
+            columnExpression8.Table = table3;
+            column8.Expression = columnExpression8;
+            selectQuery3.Columns.Add(column6);
+            selectQuery3.Columns.Add(column7);
+            selectQuery3.Columns.Add(column8);
+            selectQuery3.Name = "Product_Unite";
+            selectQuery3.Tables.Add(table3);
             this.sqlDataSource3.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery11});
+            selectQuery3});
             this.sqlDataSource3.ResultSchemaSerializable = resources.GetString("sqlDataSource3.ResultSchemaSerializable");
             // 
             // gridView31
@@ -892,9 +892,9 @@ namespace inventory_management
             this.txtPrixAchat.Properties.Appearance.Options.UseFont = true;
             this.txtPrixAchat.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtPrixAchat.Properties.AppearanceFocused.Options.UseBackColor = true;
-            editorButtonImageOptions4.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions4.Image")));
+            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
             this.txtPrixAchat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions4, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject13, serializableAppearanceObject14, serializableAppearanceObject15, serializableAppearanceObject16, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtPrixAchat.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtPrixAchat.Size = new System.Drawing.Size(268, 34);
             this.txtPrixAchat.StyleController = this.layoutControl1;
@@ -1000,9 +1000,9 @@ namespace inventory_management
             this.txtQteInit.Properties.Appearance.Options.UseFont = true;
             this.txtQteInit.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtQteInit.Properties.AppearanceFocused.Options.UseBackColor = true;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
             this.txtQteInit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtQteInit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtQteInit.Properties.MaskSettings.Set("hideInsignificantZeros", true);
             this.txtQteInit.Properties.MaskSettings.Set("autoHideDecimalSeparator", true);
@@ -1037,9 +1037,9 @@ namespace inventory_management
             this.txtQteAlert.Properties.Appearance.Options.UseFont = true;
             this.txtQteAlert.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.txtQteAlert.Properties.AppearanceFocused.Options.UseBackColor = true;
-            editorButtonImageOptions2.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions2.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.txtQteAlert.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtQteAlert.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
             this.txtQteAlert.Properties.MaskSettings.Set("hideInsignificantZeros", true);
             this.txtQteAlert.Properties.MaskSettings.Set("autoHideDecimalSeparator", true);
@@ -1078,24 +1078,24 @@ namespace inventory_management
             // 
             this.sqlDataSource7.ConnectionName = "Sales_System";
             this.sqlDataSource7.Name = "sqlDataSource7";
-            columnExpression32.ColumnName = "Et_ID";
-            table12.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
-            table12.Name = "Warehouse";
-            columnExpression32.Table = table12;
-            column32.Expression = columnExpression32;
-            columnExpression33.ColumnName = "Name";
-            columnExpression33.Table = table12;
-            column33.Expression = columnExpression33;
-            columnExpression34.ColumnName = "Address";
-            columnExpression34.Table = table12;
-            column34.Expression = columnExpression34;
-            selectQuery12.Columns.Add(column32);
-            selectQuery12.Columns.Add(column33);
-            selectQuery12.Columns.Add(column34);
-            selectQuery12.Name = "Warehouse";
-            selectQuery12.Tables.Add(table12);
+            columnExpression9.ColumnName = "Et_ID";
+            table4.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
+            table4.Name = "Warehouse";
+            columnExpression9.Table = table4;
+            column9.Expression = columnExpression9;
+            columnExpression10.ColumnName = "Name";
+            columnExpression10.Table = table4;
+            column10.Expression = columnExpression10;
+            columnExpression11.ColumnName = "Address";
+            columnExpression11.Table = table4;
+            column11.Expression = columnExpression11;
+            selectQuery4.Columns.Add(column9);
+            selectQuery4.Columns.Add(column10);
+            selectQuery4.Columns.Add(column11);
+            selectQuery4.Name = "Warehouse";
+            selectQuery4.Tables.Add(table4);
             this.sqlDataSource7.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery12});
+            selectQuery4});
             this.sqlDataSource7.ResultSchemaSerializable = resources.GetString("sqlDataSource7.ResultSchemaSerializable");
             // 
             // gridView11
@@ -1163,32 +1163,32 @@ namespace inventory_management
             // 
             this.sqlDataSource8.ConnectionName = "Sales_System";
             this.sqlDataSource8.Name = "sqlDataSource8";
-            columnExpression35.ColumnName = "Supp_ID";
-            table13.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
-            table13.Name = "Suppliers";
-            columnExpression35.Table = table13;
-            column35.Expression = columnExpression35;
-            columnExpression36.ColumnName = "Supp_Name";
-            columnExpression36.Table = table13;
-            column36.Expression = columnExpression36;
-            columnExpression37.ColumnName = "Supp_Address";
-            columnExpression37.Table = table13;
-            column37.Expression = columnExpression37;
-            columnExpression38.ColumnName = "Supp_Phone";
-            columnExpression38.Table = table13;
-            column38.Expression = columnExpression38;
-            columnExpression39.ColumnName = "Notes";
-            columnExpression39.Table = table13;
-            column39.Expression = columnExpression39;
-            selectQuery13.Columns.Add(column35);
-            selectQuery13.Columns.Add(column36);
-            selectQuery13.Columns.Add(column37);
-            selectQuery13.Columns.Add(column38);
-            selectQuery13.Columns.Add(column39);
-            selectQuery13.Name = "Suppliers";
-            selectQuery13.Tables.Add(table13);
+            columnExpression12.ColumnName = "Supp_ID";
+            table5.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"183\" />";
+            table5.Name = "Suppliers";
+            columnExpression12.Table = table5;
+            column12.Expression = columnExpression12;
+            columnExpression13.ColumnName = "Supp_Name";
+            columnExpression13.Table = table5;
+            column13.Expression = columnExpression13;
+            columnExpression14.ColumnName = "Supp_Address";
+            columnExpression14.Table = table5;
+            column14.Expression = columnExpression14;
+            columnExpression15.ColumnName = "Supp_Phone";
+            columnExpression15.Table = table5;
+            column15.Expression = columnExpression15;
+            columnExpression16.ColumnName = "Notes";
+            columnExpression16.Table = table5;
+            column16.Expression = columnExpression16;
+            selectQuery5.Columns.Add(column12);
+            selectQuery5.Columns.Add(column13);
+            selectQuery5.Columns.Add(column14);
+            selectQuery5.Columns.Add(column15);
+            selectQuery5.Columns.Add(column16);
+            selectQuery5.Name = "Suppliers";
+            selectQuery5.Tables.Add(table5);
             this.sqlDataSource8.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery13});
+            selectQuery5});
             this.sqlDataSource8.ResultSchemaSerializable = resources.GetString("sqlDataSource8.ResultSchemaSerializable");
             // 
             // gridView111
@@ -1286,24 +1286,24 @@ namespace inventory_management
             // 
             this.sqlDataSource5.ConnectionName = "Sales_System";
             this.sqlDataSource5.Name = "sqlDataSource5";
-            columnExpression40.ColumnName = "Tax_ID";
-            table14.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
-            table14.Name = "Product_Tax";
-            columnExpression40.Table = table14;
-            column40.Expression = columnExpression40;
-            columnExpression41.ColumnName = "Name";
-            columnExpression41.Table = table14;
-            column41.Expression = columnExpression41;
-            columnExpression42.ColumnName = "Tax";
-            columnExpression42.Table = table14;
-            column42.Expression = columnExpression42;
-            selectQuery14.Columns.Add(column40);
-            selectQuery14.Columns.Add(column41);
-            selectQuery14.Columns.Add(column42);
-            selectQuery14.Name = "Product_Tax";
-            selectQuery14.Tables.Add(table14);
+            columnExpression17.ColumnName = "Tax_ID";
+            table6.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"143\" />";
+            table6.Name = "Product_Tax";
+            columnExpression17.Table = table6;
+            column17.Expression = columnExpression17;
+            columnExpression18.ColumnName = "Name";
+            columnExpression18.Table = table6;
+            column18.Expression = columnExpression18;
+            columnExpression19.ColumnName = "Tax";
+            columnExpression19.Table = table6;
+            column19.Expression = columnExpression19;
+            selectQuery6.Columns.Add(column17);
+            selectQuery6.Columns.Add(column18);
+            selectQuery6.Columns.Add(column19);
+            selectQuery6.Name = "Product_Tax";
+            selectQuery6.Tables.Add(table6);
             this.sqlDataSource5.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery14});
+            selectQuery6});
             this.sqlDataSource5.ResultSchemaSerializable = resources.GetString("sqlDataSource5.ResultSchemaSerializable");
             // 
             // searchLookUpEdit1View
@@ -1344,20 +1344,20 @@ namespace inventory_management
             // 
             this.sqlDataSource9.ConnectionName = "Sales_System";
             this.sqlDataSource9.Name = "sqlDataSource9";
-            columnExpression43.ColumnName = "Pt_ID";
-            table15.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table15.Name = "Product_Type";
-            columnExpression43.Table = table15;
-            column43.Expression = columnExpression43;
-            columnExpression44.ColumnName = "Type";
-            columnExpression44.Table = table15;
-            column44.Expression = columnExpression44;
-            selectQuery15.Columns.Add(column43);
-            selectQuery15.Columns.Add(column44);
-            selectQuery15.Name = "Product_Type";
-            selectQuery15.Tables.Add(table15);
+            columnExpression20.ColumnName = "Pt_ID";
+            table7.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table7.Name = "Product_Type";
+            columnExpression20.Table = table7;
+            column20.Expression = columnExpression20;
+            columnExpression21.ColumnName = "Type";
+            columnExpression21.Table = table7;
+            column21.Expression = columnExpression21;
+            selectQuery7.Columns.Add(column20);
+            selectQuery7.Columns.Add(column21);
+            selectQuery7.Name = "Product_Type";
+            selectQuery7.Tables.Add(table7);
             this.sqlDataSource9.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery15});
+            selectQuery7});
             this.sqlDataSource9.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTkiPjxWaWV3IE5hbWU9IlByb2R1Y3RfVHlwZSI+PEZpZ" +
     "WxkIE5hbWU9IlB0X0lEIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVHlwZSIgVHlwZT0iU3Rya" +
     "W5nIiAvPjwvVmlldz48L0RhdGFTZXQ+";
@@ -1465,20 +1465,20 @@ namespace inventory_management
             // 
             this.sqlDataSource4.ConnectionName = "Sales_System";
             this.sqlDataSource4.Name = "sqlDataSource4";
-            columnExpression45.ColumnName = "Brand_ID";
-            table16.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table16.Name = "Product_Brand";
-            columnExpression45.Table = table16;
-            column45.Expression = columnExpression45;
-            columnExpression46.ColumnName = "Name";
-            columnExpression46.Table = table16;
-            column46.Expression = columnExpression46;
-            selectQuery16.Columns.Add(column45);
-            selectQuery16.Columns.Add(column46);
-            selectQuery16.Name = "Product_Brand";
-            selectQuery16.Tables.Add(table16);
+            columnExpression22.ColumnName = "Brand_ID";
+            table8.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table8.Name = "Product_Brand";
+            columnExpression22.Table = table8;
+            column22.Expression = columnExpression22;
+            columnExpression23.ColumnName = "Name";
+            columnExpression23.Table = table8;
+            column23.Expression = columnExpression23;
+            selectQuery8.Columns.Add(column22);
+            selectQuery8.Columns.Add(column23);
+            selectQuery8.Name = "Product_Brand";
+            selectQuery8.Tables.Add(table8);
             this.sqlDataSource4.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery16});
+            selectQuery8});
             this.sqlDataSource4.ResultSchemaSerializable = "PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTQiPjxWaWV3IE5hbWU9IlByb2R1Y3RfQnJhbmQiPjxGa" +
     "WVsZCBOYW1lPSJCcmFuZF9JRCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik5hbWUiIFR5cGU9I" +
     "lN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==";
@@ -1518,12 +1518,17 @@ namespace inventory_management
             // 
             this.txtRefProd.Location = new System.Drawing.Point(184, 66);
             this.txtRefProd.Name = "txtRefProd";
+            this.txtRefProd.Properties.AcceptEditorTextAsNewValue = DevExpress.Utils.DefaultBoolean.True;
             this.txtRefProd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtRefProd.Properties.Appearance.Options.UseFont = true;
             this.txtRefProd.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtRefProd.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.txtRefProd.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtRefProd.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtRefProd.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtRefProd.Properties.NullText = "";
+            this.txtRefProd.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.txtRefProd.Size = new System.Drawing.Size(432, 34);
             this.txtRefProd.StyleController = this.layoutControl1;
             this.txtRefProd.TabIndex = 0;
@@ -1532,12 +1537,17 @@ namespace inventory_management
             // 
             this.txtCodeBar.Location = new System.Drawing.Point(184, 110);
             this.txtCodeBar.Name = "txtCodeBar";
+            this.txtCodeBar.Properties.AcceptEditorTextAsNewValue = DevExpress.Utils.DefaultBoolean.True;
             this.txtCodeBar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.txtCodeBar.Properties.Appearance.Options.UseFont = true;
             this.txtCodeBar.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.txtCodeBar.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.txtCodeBar.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtCodeBar.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtCodeBar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txtCodeBar.Properties.NullText = "";
+            this.txtCodeBar.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.txtCodeBar.Size = new System.Drawing.Size(386, 34);
             this.txtCodeBar.StyleController = this.layoutControl1;
             this.txtCodeBar.TabIndex = 10;
@@ -2627,8 +2637,6 @@ namespace inventory_management
         private System.Windows.Forms.BindingSource product_TaxBindingSource;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource5;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource6;
-        private DevExpress.XtraEditors.TextEdit txtRefProd;
-        private DevExpress.XtraEditors.TextEdit txtCodeBar;
         private System.Windows.Forms.BindingSource warehouseBindingSource;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource7;
         private System.Windows.Forms.BindingSource suppliersBindingSource;
@@ -2644,5 +2652,7 @@ namespace inventory_management
         private DevExpress.XtraGrid.Columns.GridColumn colSupp_Phone;
         private DevExpress.XtraGrid.Columns.GridColumn colPt_ID;
         private DevExpress.XtraGrid.Columns.GridColumn colType;
+        private DevExpress.XtraEditors.LookUpEdit txtRefProd;
+        private DevExpress.XtraEditors.LookUpEdit txtCodeBar;
     }
 }

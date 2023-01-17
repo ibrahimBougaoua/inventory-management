@@ -20,6 +20,7 @@ namespace inventory_management.BL.Product
             DateTime Production_Date,
             DateTime Expiration_Date,
             DateTime Waiting_period,
+            byte[] Image,
             int Tax_ID ,
             int Ut_ID ,
             int Cate_ID ,
@@ -29,7 +30,7 @@ namespace inventory_management.BL.Product
         {
             DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
             dal.Open();
-            SqlParameter[] param = new SqlParameter[15];
+            SqlParameter[] param = new SqlParameter[16];
 
             param[0] = new SqlParameter("@Pro_Name", SqlDbType.NVarChar, 250);
             param[0].Value = Pro_Name;
@@ -58,23 +59,26 @@ namespace inventory_management.BL.Product
             param[8] = new SqlParameter("@Waiting_period", SqlDbType.DateTime);
             param[8].Value = Waiting_period;
 
-            param[9] = new SqlParameter("@Tax_ID", SqlDbType.Int);
-            param[9].Value = Tax_ID;
+            param[9] = new SqlParameter("@Image", SqlDbType.Image);
+            param[9].Value = Image;
 
-            param[10] = new SqlParameter("@Ut_ID", SqlDbType.Int);
-            param[10].Value = Ut_ID;
+            param[10] = new SqlParameter("@Tax_ID", SqlDbType.Int);
+            param[10].Value = Tax_ID;
 
-            param[11] = new SqlParameter("@Cate_ID", SqlDbType.Int);
-            param[11].Value = Cate_ID;
+            param[11] = new SqlParameter("@Ut_ID", SqlDbType.Int);
+            param[11].Value = Ut_ID;
 
-            param[12] = new SqlParameter("@Fm_ID", SqlDbType.Int);
-            param[12].Value = Fm_ID;
+            param[12] = new SqlParameter("@Cate_ID", SqlDbType.Int);
+            param[12].Value = Cate_ID;
 
-            param[13] = new SqlParameter("@Brand_ID", SqlDbType.Int);
-            param[13].Value = Brand_ID;
+            param[13] = new SqlParameter("@Fm_ID", SqlDbType.Int);
+            param[13].Value = Fm_ID;
 
-            param[14] = new SqlParameter("@Pro_ID", SqlDbType.Int);
-            param[14].Direction = ParameterDirection.Output;
+            param[14] = new SqlParameter("@Brand_ID", SqlDbType.Int);
+            param[14].Value = Brand_ID;
+
+            param[15] = new SqlParameter("@Pro_ID", SqlDbType.Int);
+            param[15].Direction = ParameterDirection.Output;
             
             var id = dal.excuteCommand("ADD_PRODUCT", param,"product");
             dal.Close();

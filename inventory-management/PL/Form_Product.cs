@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace inventory_management
 {
@@ -70,7 +72,13 @@ namespace inventory_management
         {
             if (dxValidationProvider1.Validate())
             {
-                int product_id = product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
+
+                byte[] bytes;
+                MemoryStream stream = new MemoryStream();
+                imgProd.Image.Save(stream, ImageFormat.Jpeg);
+                bytes = stream.ToArray();
+
+                int product_id = product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, bytes, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
                 product.add_Product_Barcode(txtCodeBar.Text, product_id);
                 product.add_Product_Price(Convert.ToInt32(txtQteInit.EditValue), Convert.ToDecimal(txtPrixAchat.EditValue), Convert.ToDecimal(txtPrixDetail.EditValue), Convert.ToDecimal(txtPrixGros.EditValue), Convert.ToDecimal(txtPrixSuperGos.EditValue), product_id);
                 product.add_Product_to_warehouse(Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(cbxWareHouse.EditValue), product_id);
