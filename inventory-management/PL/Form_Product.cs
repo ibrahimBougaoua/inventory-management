@@ -59,8 +59,7 @@ namespace inventory_management
         {
             if (dxValidationProvider1.Validate())
             {
-                MessageBox.Show(txtRefProd.Text);
-                product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
+                product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
                 //sqlDataSource1.FillAsync();
                 //txtName.Clear();
                 //txtName.Select();

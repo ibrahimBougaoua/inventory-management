@@ -152,8 +152,8 @@ namespace inventory_management
             this.sqlDataSource4 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView311 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.cbxCoulissant = new DevExpress.XtraEditors.SpinEdit();
-            this.txtCodeBar = new DevExpress.XtraEditors.LookUpEdit();
-            this.txtRefProd = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtRefProd = new DevExpress.XtraEditors.TextEdit();
+            this.txtCodeBar = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -260,8 +260,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.product_BrandBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView311)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxCoulissant.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodeBar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRefProd.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodeBar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
@@ -371,8 +371,8 @@ namespace inventory_management
             this.layoutControl1.Controls.Add(this.cbxPrixCoulissant);
             this.layoutControl1.Controls.Add(this.txtBrand);
             this.layoutControl1.Controls.Add(this.cbxCoulissant);
-            this.layoutControl1.Controls.Add(this.txtCodeBar);
             this.layoutControl1.Controls.Add(this.txtRefProd);
+            this.layoutControl1.Controls.Add(this.txtCodeBar);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -959,6 +959,8 @@ namespace inventory_management
             this.txtQteInit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtQteInit.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtQteInit.Properties.MaskSettings.Set("hideInsignificantZeros", true);
+            this.txtQteInit.Properties.MaskSettings.Set("autoHideDecimalSeparator", true);
             this.txtQteInit.Size = new System.Drawing.Size(219, 34);
             this.txtQteInit.StyleController = this.layoutControl1;
             this.txtQteInit.TabIndex = 9;
@@ -994,6 +996,8 @@ namespace inventory_management
             this.txtQteAlert.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.txtQteAlert.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.txtQteAlert.Properties.MaskSettings.Set("hideInsignificantZeros", true);
+            this.txtQteAlert.Properties.MaskSettings.Set("autoHideDecimalSeparator", true);
             this.txtQteAlert.Size = new System.Drawing.Size(132, 34);
             this.txtQteAlert.StyleController = this.layoutControl1;
             this.txtQteAlert.TabIndex = 24;
@@ -1230,9 +1234,9 @@ namespace inventory_management
             0,
             0,
             0});
-            this.cbxPrixCoulissant.Location = new System.Drawing.Point(605, 234);
+            this.cbxPrixCoulissant.Location = new System.Drawing.Point(552, 234);
             this.cbxPrixCoulissant.Name = "cbxPrixCoulissant";
-            this.cbxPrixCoulissant.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbxPrixCoulissant.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.cbxPrixCoulissant.Properties.Appearance.Options.UseFont = true;
             this.cbxPrixCoulissant.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.cbxPrixCoulissant.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
@@ -1241,7 +1245,9 @@ namespace inventory_management
             this.cbxPrixCoulissant.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbxPrixCoulissant.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
-            this.cbxPrixCoulissant.Size = new System.Drawing.Size(66, 34);
+            this.cbxPrixCoulissant.Properties.MaskSettings.Set("autoHideDecimalSeparator", true);
+            this.cbxPrixCoulissant.Properties.MaskSettings.Set("hideInsignificantZeros", true);
+            this.cbxPrixCoulissant.Size = new System.Drawing.Size(119, 34);
             this.cbxPrixCoulissant.StyleController = this.layoutControl1;
             this.cbxPrixCoulissant.TabIndex = 10;
             // 
@@ -1313,7 +1319,7 @@ namespace inventory_management
             0});
             this.cbxCoulissant.Location = new System.Drawing.Point(184, 234);
             this.cbxCoulissant.Name = "cbxCoulissant";
-            this.cbxCoulissant.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbxCoulissant.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.cbxCoulissant.Properties.Appearance.Options.UseFont = true;
             this.cbxCoulissant.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.cbxCoulissant.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
@@ -1322,30 +1328,11 @@ namespace inventory_management
             this.cbxCoulissant.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbxCoulissant.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.cbxCoulissant.Properties.MaskSettings.Set("autoHideDecimalSeparator", true);
+            this.cbxCoulissant.Properties.MaskSettings.Set("hideInsignificantZeros", true);
             this.cbxCoulissant.Size = new System.Drawing.Size(219, 34);
             this.cbxCoulissant.StyleController = this.layoutControl1;
             this.cbxCoulissant.TabIndex = 10;
-            // 
-            // txtCodeBar
-            // 
-            this.txtCodeBar.Location = new System.Drawing.Point(184, 110);
-            this.txtCodeBar.Name = "txtCodeBar";
-            this.txtCodeBar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.txtCodeBar.Properties.Appearance.Options.UseFont = true;
-            this.txtCodeBar.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.txtCodeBar.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCodeBar.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.txtCodeBar.Properties.AppearanceFocused.Options.UseFont = true;
-            this.txtCodeBar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtCodeBar.Properties.DisplayMember = "Name";
-            this.txtCodeBar.Properties.NullText = "";
-            this.txtCodeBar.Properties.PopupSizeable = false;
-            this.txtCodeBar.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.txtCodeBar.Properties.ValueMember = "Des_ID";
-            this.txtCodeBar.Size = new System.Drawing.Size(386, 34);
-            this.txtCodeBar.StyleController = this.layoutControl1;
-            this.txtCodeBar.TabIndex = 10;
             // 
             // txtRefProd
             // 
@@ -1357,16 +1344,23 @@ namespace inventory_management
             this.txtRefProd.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.txtRefProd.Properties.AppearanceFocused.Options.UseBackColor = true;
             this.txtRefProd.Properties.AppearanceFocused.Options.UseFont = true;
-            this.txtRefProd.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txtRefProd.Properties.DisplayMember = "Name";
-            this.txtRefProd.Properties.NullText = "";
-            this.txtRefProd.Properties.PopupSizeable = false;
-            this.txtRefProd.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
-            this.txtRefProd.Properties.ValueMember = "Des_ID";
             this.txtRefProd.Size = new System.Drawing.Size(432, 34);
             this.txtRefProd.StyleController = this.layoutControl1;
             this.txtRefProd.TabIndex = 0;
+            // 
+            // txtCodeBar
+            // 
+            this.txtCodeBar.Location = new System.Drawing.Point(184, 110);
+            this.txtCodeBar.Name = "txtCodeBar";
+            this.txtCodeBar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.txtCodeBar.Properties.Appearance.Options.UseFont = true;
+            this.txtCodeBar.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtCodeBar.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.txtCodeBar.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.txtCodeBar.Properties.AppearanceFocused.Options.UseFont = true;
+            this.txtCodeBar.Size = new System.Drawing.Size(386, 34);
+            this.txtCodeBar.StyleController = this.layoutControl1;
+            this.txtCodeBar.TabIndex = 10;
             // 
             // Root
             // 
@@ -1677,7 +1671,9 @@ namespace inventory_management
             this.layoutControlItem32.Size = new System.Drawing.Size(224, 41);
             this.layoutControlItem32.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem32.Text = "Prix Coulissant";
-            this.layoutControlItem32.TextSize = new System.Drawing.Size(136, 16);
+            this.layoutControlItem32.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem32.TextSize = new System.Drawing.Size(94, 16);
+            this.layoutControlItem32.TextToControlDistance = 5;
             // 
             // emptySpaceItem6
             // 
@@ -2246,8 +2242,8 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.product_BrandBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView311)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbxCoulissant.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodeBar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtRefProd.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCodeBar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
@@ -2453,8 +2449,8 @@ namespace inventory_management
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource4;
         private System.Windows.Forms.BindingSource product_TaxBindingSource;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource5;
-        private DevExpress.XtraEditors.LookUpEdit txtCodeBar;
-        private DevExpress.XtraEditors.LookUpEdit txtRefProd;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource6;
+        private DevExpress.XtraEditors.TextEdit txtRefProd;
+        private DevExpress.XtraEditors.TextEdit txtCodeBar;
     }
 }
