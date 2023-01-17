@@ -161,7 +161,7 @@ namespace inventory_management
             this.gridView11 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colEt_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cbxType11 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.cbxSupp = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sqlDataSource8 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.gridView111 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -283,7 +283,7 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.cbxWareHouse.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxType11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxSupp.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView111)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTax.Properties)).BeginInit();
@@ -402,7 +402,7 @@ namespace inventory_management
             this.layoutControl1.Controls.Add(this.checkEdit1);
             this.layoutControl1.Controls.Add(this.txtQteAlert);
             this.layoutControl1.Controls.Add(this.cbxWareHouse);
-            this.layoutControl1.Controls.Add(this.cbxType11);
+            this.layoutControl1.Controls.Add(this.cbxSupp);
             this.layoutControl1.Controls.Add(this.txtTax);
             this.layoutControl1.Controls.Add(this.cbxTypeProd);
             this.layoutControl1.Controls.Add(this.imgProd);
@@ -1132,27 +1132,27 @@ namespace inventory_management
             this.colName.VisibleIndex = 1;
             this.colName.Width = 577;
             // 
-            // cbxType11
+            // cbxSupp
             // 
-            this.cbxType11.Location = new System.Drawing.Point(184, 655);
-            this.cbxType11.Name = "cbxType11";
-            this.cbxType11.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.cbxType11.Properties.Appearance.Options.UseFont = true;
-            this.cbxType11.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.cbxType11.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.cbxType11.Properties.AppearanceFocused.Options.UseBackColor = true;
-            this.cbxType11.Properties.AppearanceFocused.Options.UseFont = true;
-            this.cbxType11.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbxSupp.Location = new System.Drawing.Point(184, 655);
+            this.cbxSupp.Name = "cbxSupp";
+            this.cbxSupp.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.cbxSupp.Properties.Appearance.Options.UseFont = true;
+            this.cbxSupp.Properties.AppearanceFocused.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.cbxSupp.Properties.AppearanceFocused.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.cbxSupp.Properties.AppearanceFocused.Options.UseBackColor = true;
+            this.cbxSupp.Properties.AppearanceFocused.Options.UseFont = true;
+            this.cbxSupp.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbxType11.Properties.DataSource = this.suppliersBindingSource;
-            this.cbxType11.Properties.DisplayMember = "Supp_Name";
-            this.cbxType11.Properties.NullText = "";
-            this.cbxType11.Properties.PopupSizeable = false;
-            this.cbxType11.Properties.PopupView = this.gridView111;
-            this.cbxType11.Properties.ValueMember = "Supp_ID";
-            this.cbxType11.Size = new System.Drawing.Size(266, 34);
-            this.cbxType11.StyleController = this.layoutControl1;
-            this.cbxType11.TabIndex = 10;
+            this.cbxSupp.Properties.DataSource = this.suppliersBindingSource;
+            this.cbxSupp.Properties.DisplayMember = "Supp_Name";
+            this.cbxSupp.Properties.NullText = "";
+            this.cbxSupp.Properties.PopupSizeable = false;
+            this.cbxSupp.Properties.PopupView = this.gridView111;
+            this.cbxSupp.Properties.ValueMember = "Supp_ID";
+            this.cbxSupp.Size = new System.Drawing.Size(266, 34);
+            this.cbxSupp.StyleController = this.layoutControl1;
+            this.cbxSupp.TabIndex = 10;
             // 
             // suppliersBindingSource
             // 
@@ -2097,7 +2097,7 @@ namespace inventory_management
             // 
             this.layoutControlItem36.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.layoutControlItem36.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem36.Control = this.cbxType11;
+            this.layoutControlItem36.Control = this.cbxSupp;
             this.layoutControlItem36.ControlAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.layoutControlItem36.CustomizationFormText = "Code Barre";
             this.layoutControlItem36.Location = new System.Drawing.Point(0, 54);
@@ -2410,7 +2410,7 @@ namespace inventory_management
             ((System.ComponentModel.ISupportInitialize)(this.cbxWareHouse.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbxType11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbxSupp.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView111)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTax.Properties)).EndInit();
@@ -2540,7 +2540,7 @@ namespace inventory_management
         private DevExpress.XtraEditors.SpinEdit txtQteAlert;
         private DevExpress.XtraEditors.SearchLookUpEdit cbxWareHouse;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView11;
-        private DevExpress.XtraEditors.SearchLookUpEdit cbxType11;
+        private DevExpress.XtraEditors.SearchLookUpEdit cbxSupp;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView111;
         private DevExpress.XtraEditors.SearchLookUpEdit txtTax;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;

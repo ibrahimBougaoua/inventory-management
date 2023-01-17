@@ -15,6 +15,8 @@ namespace inventory_management
     public partial class Form_Product : DevExpress.XtraEditors.XtraForm
     {
         BL.Product.Product product = new BL.Product.Product();
+        int order_id = -1;
+        int supp_old_id = -1;
 
         public Form_Product()
         {
@@ -71,8 +73,16 @@ namespace inventory_management
                 int product_id = product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
                 product.add_Product_Barcode(txtCodeBar.Text, product_id);
                 product.add_Product_Price(Convert.ToInt32(txtQteInit.EditValue), Convert.ToDecimal(txtPrixAchat.EditValue), Convert.ToDecimal(txtPrixDetail.EditValue), Convert.ToDecimal(txtPrixGros.EditValue), Convert.ToDecimal(txtPrixSuperGos.EditValue), product_id);
-                product.add_Product_to_warehouse(Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(cbxWareHouse.EditValue), product_id); 
-                 SoundPlayer simpleSound = new SoundPlayer(@"c:\Added.wav");
+                product.add_Product_to_warehouse(Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(cbxWareHouse.EditValue), product_id);
+
+                if (supp_old_id != Convert.ToInt32(cbxSupp.EditValue))
+                {
+                    order_id = product.add_Product_order(Convert.ToInt32(cbxSupp.EditValue), DateTime.Now);
+                    supp_old_id = Convert.ToInt32(cbxSupp.EditValue);
+                }
+
+                product.add_Product_order_details(order_id, Convert.ToInt32(cbxSupp.EditValue), product_id, DateTime.Now, Convert.ToInt32(txtQteInit.EditValue), "");
+                SoundPlayer simpleSound = new SoundPlayer(@"c:\Added.wav");
                 simpleSound.Play();
             }
             else

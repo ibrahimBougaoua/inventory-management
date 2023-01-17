@@ -76,12 +76,12 @@ namespace inventory_management.BL.Product
             param[14] = new SqlParameter("@Pro_ID", SqlDbType.Int);
             param[14].Direction = ParameterDirection.Output;
             
-            var id = dal.excuteCommand("ADD_PRODUCT", param);
+            var id = dal.excuteCommand("ADD_PRODUCT", param,"product");
             dal.Close();
 
             return id;
         }
-
+        
         public void add_Product_Price(
             int Qty,
             Decimal Buy_Price,
@@ -159,5 +159,63 @@ namespace inventory_management.BL.Product
             dal.Close();
         }
 
+        public int add_Product_order(
+            int Sup_ID,
+            DateTime Date
+            )
+        {
+            DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
+            dal.Open();
+            SqlParameter[] param = new SqlParameter[3];
+
+            param[0] = new SqlParameter("@Sup_ID", SqlDbType.Int);
+            param[0].Value = Sup_ID;
+
+            param[1] = new SqlParameter("@Date", SqlDbType.DateTime);
+            param[1].Value = Date;
+
+            param[2] = new SqlParameter("@Order_ID", SqlDbType.Int);
+            param[2].Direction = ParameterDirection.Output;
+            
+            var id = dal.excuteCommand("ADD_PRODUCT_ORDER", param, "order");
+            dal.Close();
+
+            return id;
+        }
+
+    public void add_Product_order_details(
+            int Order_ID,
+            int Sup_ID,
+            int Pro_ID,
+            DateTime Date,
+            int Qty,
+            string User_Name
+            )
+        {
+            DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
+            dal.Open();
+            SqlParameter[] param = new SqlParameter[6];
+
+            param[0] = new SqlParameter("@Order_ID", SqlDbType.Int);
+            param[0].Value = Order_ID;
+
+            param[1] = new SqlParameter("@Sup_ID", SqlDbType.Int);
+            param[1].Value = Sup_ID;
+
+            param[2] = new SqlParameter("@Pro_ID", SqlDbType.Int);
+            param[2].Value = Pro_ID;
+
+            param[3] = new SqlParameter("@Date", SqlDbType.DateTime);
+            param[3].Value = Date;
+
+            param[4] = new SqlParameter("@Qty", SqlDbType.Int);
+            param[4].Value = Qty;
+
+            param[5] = new SqlParameter("@User_Name", SqlDbType.NVarChar, 250);
+            param[5].Value = User_Name;
+            
+            dal.excuteCommand("ADD_PRODUCT_ORDER_DETAILS", param);
+            dal.Close();
+        }
     }
 }
