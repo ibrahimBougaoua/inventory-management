@@ -43,8 +43,17 @@ namespace inventory_management
 
         private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form_Suppliers frm = new Form_Suppliers();
-            frm.ShowDialog();
+            Form formToOpen = isActive(typeof(PL.Suppliers.Form_Supplier));
+            if (formToOpen == null) // if form is not open create it
+            {
+                PL.Suppliers.Form_Supplier supplier = new PL.Suppliers.Form_Supplier();
+                supplier.MdiParent = this;
+                supplier.Show();
+            }
+            else  // else it's open so open it
+            {
+                formToOpen.Activate();
+            }
         }
 
         private void skinRibbonGalleryBarItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

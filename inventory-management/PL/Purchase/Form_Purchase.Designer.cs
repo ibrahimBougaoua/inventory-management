@@ -49,8 +49,8 @@ namespace inventory_management.PL.Purchase
             DevExpress.DataAccess.Sql.RelationColumnInfo relationColumnInfo1 = new DevExpress.DataAccess.Sql.RelationColumnInfo();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Purchase));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colOrder_ID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSupp_Name = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -73,18 +73,6 @@ namespace inventory_management.PL.Purchase
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colOrder_ID,
-            this.colDate,
-            this.colSupp_Name,
-            this.colSupp_Address,
-            this.colSupp_Phone,
-            this.colNotes});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
             // 
             // sqlDataSource1
             // 
@@ -130,6 +118,18 @@ namespace inventory_management.PL.Purchase
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             selectQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colOrder_ID,
+            this.colDate,
+            this.colSupp_Name,
+            this.colSupp_Address,
+            this.colSupp_Phone,
+            this.colNotes});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // colOrder_ID
             // 
@@ -194,7 +194,7 @@ namespace inventory_management.PL.Purchase
             this.ClientSize = new System.Drawing.Size(1338, 783);
             this.Controls.Add(this.gridControl1);
             this.Name = "Form_Purchase";
-            this.Text = "Achats";
+            this.Text = "Gestion Des Achats";
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
