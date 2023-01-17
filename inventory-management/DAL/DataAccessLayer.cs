@@ -57,7 +57,7 @@ namespace inventory_management.DAL
         }
         //Methode to insert,Update and delete Data from database
 
-        public void excuteCommand(string StoredProcedure, SqlParameter[] param)
+        public int excuteCommand(string StoredProcedure, SqlParameter[] param)
         {
             SqlCommand sqlcmd = new SqlCommand();
             sqlcmd.CommandType = CommandType.StoredProcedure;
@@ -68,12 +68,12 @@ namespace inventory_management.DAL
             {
                 sqlcmd.Parameters.AddRange(param);
             }
+
             sqlcmd.ExecuteNonQuery();
-            
+
+            string id = sqlcmd.Parameters["@Pro_ID"].Value.ToString();
+
+            return Convert.ToInt32(id);
         }
-
-
-
-
     }
 }

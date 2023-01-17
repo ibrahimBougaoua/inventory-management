@@ -10,7 +10,7 @@ namespace inventory_management.BL.Product
 {
     class Product
     {
-        public void add_Product(
+        public int add_Product(
             string Pro_Name,
             string Ref,
             int Box,
@@ -29,7 +29,7 @@ namespace inventory_management.BL.Product
         {
             DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
             dal.Open();
-            SqlParameter[] param = new SqlParameter[14];
+            SqlParameter[] param = new SqlParameter[15];
 
             param[0] = new SqlParameter("@Pro_Name", SqlDbType.NVarChar, 250);
             param[0].Value = Pro_Name;
@@ -73,9 +73,67 @@ namespace inventory_management.BL.Product
             param[13] = new SqlParameter("@Brand_ID", SqlDbType.Int);
             param[13].Value = Brand_ID;
 
-            dal.excuteCommand("ADD_PRODUCT", param);
+            param[14] = new SqlParameter("@Pro_ID", SqlDbType.Int);
+            param[14].Direction = ParameterDirection.Output;
+            
+            var id = dal.excuteCommand("ADD_PRODUCT", param);
             dal.Close();
 
+            return id;
+        }
+
+        public void add_Product_Price(
+            int Qty,
+            Decimal Buy_Price,
+            Decimal Sale_Price_1,
+            Decimal Sale_Price_2,
+            Decimal Sale_Price_3,
+            int Pro_ID
+            )
+        {
+            DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
+            dal.Open();
+            SqlParameter[] param = new SqlParameter[6];
+
+            param[0] = new SqlParameter("@Qty", SqlDbType.Int);
+            param[0].Value = Qty;
+
+            param[1] = new SqlParameter("@Buy_Price", SqlDbType.Decimal);
+            param[1].Value = Buy_Price;
+
+            param[2] = new SqlParameter("@Sale_Price_1", SqlDbType.Decimal);
+            param[2].Value = Sale_Price_1;
+
+            param[3] = new SqlParameter("@Sale_Price_2", SqlDbType.Decimal);
+            param[3].Value = Sale_Price_2;
+
+            param[4] = new SqlParameter("@Sale_Price_3", SqlDbType.Decimal);
+            param[4].Value = Sale_Price_3;
+
+            param[5] = new SqlParameter("@Pro_ID", SqlDbType.Int);
+            param[5].Value = Pro_ID;
+
+            dal.excuteCommand("ADD_PRODUCT_PRICE", param);
+            dal.Close();
+        }
+
+        public void add_Product_Barcode(
+            string Barcode,
+            int Pro_ID
+            )
+        {
+            DAL.DataAccessLayer dal = new DAL.DataAccessLayer();
+            dal.Open();
+            SqlParameter[] param = new SqlParameter[2];
+
+            param[0] = new SqlParameter("@Barcode", SqlDbType.NVarChar, 250);
+            param[0].Value = Barcode;
+
+            param[1] = new SqlParameter("@Pro_ID", SqlDbType.Int);
+            param[1].Value = Pro_ID;
+
+            dal.excuteCommand("ADD_PRODUCT_BARCODE", param);
+            dal.Close();
         }
     }
 }

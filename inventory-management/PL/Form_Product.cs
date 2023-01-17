@@ -59,10 +59,9 @@ namespace inventory_management
         {
             if (dxValidationProvider1.Validate())
             {
-                product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
-                //sqlDataSource1.FillAsync();
-                //txtName.Clear();
-                //txtName.Select();
+                int product_id = product.add_Product(txtNomProd.Text,txtRefProd.Text, Convert.ToInt32(cbxCoulissant.EditValue), Convert.ToDecimal(cbxPrixCoulissant.EditValue), Convert.ToInt32(txtQteInit.EditValue), Convert.ToInt32(txtQteAlert.EditValue), DateTime.Now, DateTime.Now, DateTime.Now, Convert.ToInt32(txtTax.EditValue), Convert.ToInt32(txtUnit.EditValue), Convert.ToInt32(txtCateg.EditValue), Convert.ToInt32(txtFamille.EditValue), Convert.ToInt32(txtBrand.EditValue));
+                product.add_Product_Barcode(txtCodeBar.Text, product_id);
+                product.add_Product_Price(Convert.ToInt32(txtQteInit.EditValue), Convert.ToDecimal(txtPrixAchat.EditValue), Convert.ToDecimal(txtPrixDetail.EditValue), Convert.ToDecimal(txtPrixGros.EditValue), Convert.ToDecimal(txtPrixSuperGos.EditValue), product_id);
                 SoundPlayer simpleSound = new SoundPlayer(@"c:\Added.wav");
                 simpleSound.Play();
             }
