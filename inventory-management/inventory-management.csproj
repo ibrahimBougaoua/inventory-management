@@ -75,6 +75,7 @@
     <Compile Include="BL\Deserved.cs" />
     <Compile Include="BL\Family\Family.cs" />
     <Compile Include="BL\Product\Product.cs" />
+    <Compile Include="BL\Type\Type.cs" />
     <Compile Include="BL\Warehouse\Warehouse.cs" />
     <Compile Include="BL\Tax\Tax.cs" />
     <Compile Include="BL\Unit\Unit.cs" />
@@ -133,6 +134,12 @@
     <Compile Include="PL\Product\Form_Family.Designer.cs">
       <DependentUpon>Form_Family.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\Product\Form_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Product\Form_Type.Designer.cs">
+      <DependentUpon>Form_Type.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\Product\Form_Warehouse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Product\Form_Family.resx">
       <DependentUpon>Form_Family.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Product\Form_Type.resx">
+      <DependentUpon>Form_Type.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\Product\Form_Warehouse.resx">
       <DependentUpon>Form_Warehouse.cs</DependentUpon>
