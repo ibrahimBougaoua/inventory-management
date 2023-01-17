@@ -86,5 +86,17 @@ namespace inventory_management
                 formToOpen.Activate();
             }
         }
+
+        private void barButtonItem44_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form_Customer customer = new Form_Customer();
+            customer.ShowDialog();
+        }
+
+        private void barButtonItem45_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form_Suppliers supplier = new Form_Suppliers();
+            supplier.ShowDialog();
+        }
     }
 }
