@@ -52,7 +52,6 @@ C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-
 C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\bin\Debug\DevExpress.Xpo.v22.2.xml
 C:\Users\hacen\source\repos\inventory-management\inventory-management\inventory-management\obj\Debug\inventory_management.Form_Suppliers.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory-management.csproj.AssemblyReference.cache
-C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.Form1.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.Form_Customer.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.Form_Deserved.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.Form_DeservedType.resources
@@ -114,3 +113,5 @@ C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\invent
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Tax.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Warehouse.resources
 C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Product.Form_Type.resources
+C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.Form_Main.resources
+C:\Users\hacen\source\inventory-management\inventory-management\obj\Debug\inventory_management.PL.Purchase.Form_Purchase.resources
