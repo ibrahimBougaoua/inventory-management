@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace inventory_management.DAL
 {
@@ -38,7 +39,7 @@ namespace inventory_management.DAL
         }
 
         //Methode to read Data from database
-        public DataTable SelectData(string StoredProcedure,SqlParameter[] param)
+        public DataTable SelectData(string StoredProcedure, SqlParameter[] param = null)
         {
             SqlCommand sqlcmd = new SqlCommand();
             sqlcmd.CommandType = CommandType.StoredProcedure;
@@ -53,10 +54,30 @@ namespace inventory_management.DAL
             SqlDataAdapter da = new SqlDataAdapter(sqlcmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
+
             return dt;
         }
-        //Methode to insert,Update and delete Data from database
+        //Methode to read Data from database
+        public string SelectSingleData(string StoredProcedure, SqlParameter[] param = null, string table = "")
+        {
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.CommandType = CommandType.StoredProcedure;
+            sqlcmd.CommandText = StoredProcedure;
+            sqlcmd.Connection = sqlconnection;
 
+            if (param != null)
+            {
+                sqlcmd.Parameters.AddRange(param);
+            }
+
+            sqlcmd.ExecuteNonQuery();
+
+            string data = sqlcmd.ExecuteScalar().ToString();
+
+            return data;
+        }
+        //Methode to insert,Update and delete Data from database
+        
         public int excuteCommand(string StoredProcedure, SqlParameter[] param,string table = "")
         {
             SqlCommand sqlcmd = new SqlCommand();

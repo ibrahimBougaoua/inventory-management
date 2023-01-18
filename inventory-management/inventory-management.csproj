@@ -74,6 +74,7 @@
     <Compile Include="BL\Category\Category.cs" />
     <Compile Include="BL\Deserved.cs" />
     <Compile Include="BL\Family\Family.cs" />
+    <Compile Include="BL\Order\Order.cs" />
     <Compile Include="BL\Product\Product.cs" />
     <Compile Include="BL\Type\Type.cs" />
     <Compile Include="BL\Warehouse\Warehouse.cs" />
